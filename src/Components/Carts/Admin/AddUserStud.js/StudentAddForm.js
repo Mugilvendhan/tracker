@@ -684,9 +684,17 @@ import React, { useEffect, useState } from 'react';
 import { Button, Container, Form, Modal, ModalBody } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { addUserToServer, getUserFromServer } from '../../../../slices/StudentProfileSlice';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+
 
 function StudentAddFormModal(props) {
   const dispatch = useDispatch();
+
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(prevState => !prevState);
+  };
 
  
 
@@ -823,6 +831,28 @@ function StudentAddFormModal(props) {
     <Form.Control type="email" name="email" value={formData.email} onChange={handleChange} />
     <div className="error-message text-danger">{errors.email}</div>
 </Form.Group>
+
+<Form.Group className="mb-3" controlId="password">
+      <Form.Label>Password</Form.Label>
+      <div className="input-group">
+        <Form.Control 
+          type={showPassword ? 'text' : 'password'} 
+          name="password" 
+          value={formData.password} 
+          onChange={handleChange} 
+          //onBlur={validatePassword} 
+          placeholder="Enter password" 
+        />
+        <button 
+          className="btn btn-outline-secondary" 
+          type="button" 
+          onClick={togglePasswordVisibility}
+        >
+          {showPassword ? <FaEyeSlash /> : <FaEye />}
+        </button>
+      </div>
+      {errors.password && <div className="text-danger">{errors.password}</div>}
+    </Form.Group>
 <Form.Group className="mb-3" controlId="year">
     <Form.Label>Year <span className="star text-danger">*</span></Form.Label>
     <Form.Select name="year" value={formData.year} onChange={handleChange} isInvalid={!!errors.year}>
@@ -879,11 +909,7 @@ function StudentAddFormModal(props) {
     <Form.Control.Feedback type="invalid">{errors.role}</Form.Control.Feedback>
 </Form.Group> 
 
-<Form.Group className="mb-3" controlId="password">
-    <Form.Label>Password <span className="star text-danger">*</span></Form.Label>
-    <Form.Control type="password" name="password" value={formData.password} onChange={handleChange} />
-    <div className="error-message text-danger">{errors.password}</div>
-</Form.Group>
+
 
 
               <div className="d-flex align-items-center justify-content-center mb-4">

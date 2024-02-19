@@ -303,8 +303,20 @@ import { Button, Container, Form, Modal, ModalBody } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 //import { addUserToServer, getUserFromServer } from '../../../../slices/StudentProfileSlice';
 import { updateUserToServer } from '../../slices/StudentProfileSlice';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+
+
 
 function StudentAddFormModal(props) {
+
+
+
+  
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(prevState => !prevState);
+  };
 
   const[name,setName]=useState('');
   const[photo,setPhoto]=useState('');
@@ -405,6 +417,28 @@ function StudentAddFormModal(props) {
     <div className="error-message text-danger">{errors.email}</div>
 </Form.Group>
 
+<Form.Group className="mb-3" controlId="password">
+      <Form.Label>Password</Form.Label>
+      <div className="input-group">
+        <Form.Control 
+          type={showPassword ? 'text' : 'password'} 
+          name="password" 
+          value={password} 
+          onChange={(e)=>setPassword(e.target.value)}
+          //onBlur={validatePassword} 
+          placeholder="Enter password" 
+        />
+        <button 
+          className="btn btn-outline-secondary" 
+          type="button" 
+          onClick={togglePasswordVisibility}
+        >
+          {showPassword ? <FaEyeSlash /> : <FaEye />}
+        </button>
+      </div>
+      {errors.password && <div className="text-danger">{errors.password}</div>}
+    </Form.Group>
+
 <Form.Group className="mb-3" controlId="dept">
     <Form.Label>Department <span className="star text-danger">*</span></Form.Label>
     <Form.Select name="dept" value={classdept} onChange={(e)=>setClassDept(e.target.value)} isInvalid={!!errors.dept}>
@@ -449,11 +483,11 @@ function StudentAddFormModal(props) {
     <Form.Control.Feedback type="invalid">{errors.role}</Form.Control.Feedback>
 </Form.Group> 
 
-<Form.Group className="mb-3" controlId="password">
+{/* <Form.Group className="mb-3" controlId="password">
     <Form.Label>Password <span className="star text-danger">*</span></Form.Label>
     <Form.Control type="password" name="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
     <div className="error-message text-danger">{errors.password}</div>
-</Form.Group>
+</Form.Group> */}
 
 
               <div className="d-flex align-items-center justify-content-center mb-4">

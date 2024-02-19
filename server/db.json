@@ -211,7 +211,7 @@
       "mobile": "6381180091",
       "address": "99/1,Rathan Street santhi nagar Ammapet,Salem",
       "password": "John@123",
-      "photo":"https://images.pexels.com/photos/1752126/pexels-photo-1752126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg"
+      "photo": "https://images.pexels.com/photos/1752126/pexels-photo-1752126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg"
     },
     {
       "id": "87f9",
@@ -223,6 +223,30 @@
       "role": "Staff",
       "address": "99/1,Balaji Street near Jothi theatre Ammapet,Salem",
       "password": "Staff@001",
+      "photo": "https://img.freepik.com/free-photo/front-view-man-working-as-real-estate-agent_23-2151064882.jpg?t=st=1708319460~exp=1708323060~hmac=f07d72a8a1310109b8ce5cfd257ece9d5bd254f78dbc927fd50cdf558d45b08d&w=360"
+    },
+    {
+      "id": "4b2e",
+      "name": "Kowshikraj k",
+      "email": "stud1001@gmail.com",
+      "year": "IV",
+      "classdept": "CSE",
+      "mobile": "9485762348",
+      "role": "Student",
+      "address": "30/11,Arisipalayam Main Road Salem",
+      "password": "Stud@1001",
+      "photo": "https://images.pexels.com/photos/5885124/pexels-photo-5885124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg"
+    },
+    {
+      "id": "a651",
+      "name": "MUGIL ",
+      "email": "mugilvendhan1312@gmail.com",
+      "year": "III",
+      "classdept": "Mechanical",
+      "mobile": "9383711534",
+      "role": "Student",
+      "address": "99/1,Avvaiyaar Street ammapet near Jothi theatre,salem",
+      "password": "mugiol",
       "photo": "https://img.freepik.com/free-photo/front-view-man-working-as-real-estate-agent_23-2151064882.jpg?t=st=1708319460~exp=1708323060~hmac=f07d72a8a1310109b8ce5cfd257ece9d5bd254f78dbc927fd50cdf558d45b08d&w=360"
     }
   ],
