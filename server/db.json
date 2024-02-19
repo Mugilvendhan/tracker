@@ -1,0 +1,255 @@
+{
+  "issues": [
+    {
+      "id": "f83e",
+      "date": "2024-02-08",
+      "name": "Tamil Selvi",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "6383711534",
+      "issueon": "Course material",
+      "description": "hloooo byeee",
+      "status": "Completed"
+    },
+    {
+      "id": "d18f",
+      "date": "2024-02-16",
+      "name": "MUGIL",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "6383711534",
+      "issueon": "Academic Facility",
+      "description": "hlooo jiii",
+      "status": "Completed"
+    },
+    {
+      "id": "9a5f",
+      "date": "2024-02-13",
+      "name": "Tamil Selvi",
+      "dept": "Mechanical",
+      "priority": "Low",
+      "mobile": "6383711534",
+      "issueon": "Course material",
+      "description": "hloooo byeee",
+      "status": "Pending"
+    },
+    {
+      "id": "c4f5",
+      "date": "2024-02-08",
+      "name": "MUGIL VENDHAN",
+      "dept": "Civil",
+      "priority": "Medium",
+      "mobile": "7575757575",
+      "issueon": "Grade",
+      "description": "rrrr",
+      "status": "Pending"
+    },
+    {
+      "id": "3871",
+      "date": "2024-01-31",
+      "name": "MUGIL VENDHAN",
+      "dept": "Civil",
+      "priority": "High",
+      "mobile": "6383711534",
+      "issueon": "Others",
+      "description": "hi im mugil",
+      "status": "Pending"
+    },
+    {
+      "id": "799d",
+      "date": "2024-02-06",
+      "name": "Tamil Selvi",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "9999999988",
+      "issueon": "Others",
+      "description": "alke",
+      "status": "Pending"
+    },
+    {
+      "id": "09a5",
+      "date": "2024-02-13",
+      "name": "Krishan",
+      "dept": "Civil",
+      "priority": "Medium",
+      "mobile": "6383711534",
+      "issueon": "Grade",
+      "description": "alke",
+      "status": "In Review"
+    }
+  ],
+  "issuesfaculty": [
+    {
+      "id": "3891",
+      "date": "2024-02-13",
+      "name": " VENDHANMUGIL hlooo",
+      "dept": "Civil",
+      "priority": "High",
+      "mobile": "6383711534",
+      "issueon": "Grade",
+      "description": "hlooo jiii",
+      "status": "In Review"
+    },
+    {
+      "id": "001c",
+      "date": "2024-02-13",
+      "name": "MUGIL VENDHAN",
+      "dept": "Mechanical",
+      "priority": "High",
+      "mobile": "6383711534",
+      "issueon": "Laboratory",
+      "description": "alke",
+      "status": "Completed"
+    },
+    {
+      "id": "c5a9",
+      "date": "2024-02-14",
+      "name": "nithiyq",
+      "dept": "Mechanical",
+      "priority": "Medium",
+      "mobile": "6381180091",
+      "issueon": "Course material",
+      "description": "hloooo byeee",
+      "status": "Approved"
+    },
+    {
+      "id": "f596",
+      "date": "2024-02-15",
+      "name": "MUGIL VENDHAN",
+      "dept": "Civil",
+      "priority": "Medium",
+      "mobile": "6383711534",
+      "issueon": "Laboratory",
+      "description": "alke",
+      "status": "Pending"
+    },
+    {
+      "id": "b30f",
+      "date": "2024-02-15",
+      "name": "MUGIL VENDHAN",
+      "dept": "Civil",
+      "priority": "High",
+      "mobile": "6383711534",
+      "issueon": "Laboratory",
+      "description": "hi im mugil",
+      "status": "Pending"
+    },
+    {
+      "id": "f5fb",
+      "date": "2024-02-15",
+      "name": "MUGIL VENDHAN",
+      "dept": "Mechanical",
+      "priority": "High",
+      "mobile": "6383711534",
+      "issueon": "Documentation",
+      "description": "kjasdnckja slcknals",
+      "status": "Pending"
+    },
+    {
+      "id": "a54d",
+      "date": "2024-02-16",
+      "name": "MUGIL VENDHAN",
+      "dept": "ECE",
+      "priority": "Low",
+      "mobile": "6383711534",
+      "issueon": "Others",
+      "description": "hloooo byeee",
+      "status": "Pending"
+    },
+    {
+      "id": "a76a",
+      "date": "2024-02-09",
+      "name": "MUGIL VENDHAN",
+      "dept": "CSE",
+      "priority": "Low",
+      "mobile": "6383711534",
+      "issueon": "Course material",
+      "description": "alke",
+      "status": "Pending"
+    },
+    {
+      "id": "58ab",
+      "date": "2024-02-16",
+      "name": "Hello",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "6383711534",
+      "issueon": "Registration",
+      "description": "hlooo jiii",
+      "status": "Pending"
+    },
+    {
+      "id": "f4ec",
+      "date": "2024-02-16",
+      "name": "Mugil",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "6383711534",
+      "issueon": "Laboratory",
+      "description": "hi im mugil",
+      "status": "Pending"
+    },
+    {
+      "id": "80af",
+      "date": "2024-02-14",
+      "name": "MUGIL VENDHAN",
+      "dept": "Mechanical",
+      "priority": "Low",
+      "mobile": "6383711534",
+      "issueon": "Course material",
+      "description": "hloooo byeee",
+      "status": "Pending"
+    }
+  ],
+  "studentprofile": [
+    {
+      "id": "1",
+      "role": "admin",
+      "name": "John",
+      "classdept": "-",
+      "email": "adminkiot@gmail.com",
+      "mobile": "6381180091",
+      "address": "99/1,Rathan Street santhi nagar Ammapet,Salem",
+      "password": "John@123",
+      "photo":"https://images.pexels.com/photos/1752126/pexels-photo-1752126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg"
+    },
+    {
+      "id": "87f9",
+      "name": "MUGIL VENDHAN",
+      "email": "staff001@gmail.com",
+      "year": "III",
+      "classdept": "CSE",
+      "mobile": "6383711534",
+      "role": "Staff",
+      "address": "99/1,Balaji Street near Jothi theatre Ammapet,Salem",
+      "password": "Staff@001",
+      "photo": "https://img.freepik.com/free-photo/front-view-man-working-as-real-estate-agent_23-2151064882.jpg?t=st=1708319460~exp=1708323060~hmac=f07d72a8a1310109b8ce5cfd257ece9d5bd254f78dbc927fd50cdf558d45b08d&w=360"
+    }
+  ],
+  "assigntask": [
+    {
+      "id": "5f39",
+      "task": "kjn",
+      "date": "2024-02-23",
+      "subname": "kmnj",
+      "classselect": "IV-CSE",
+      "duedate": "2024-02-24"
+    },
+    {
+      "id": "652d",
+      "task": "Enter the string ",
+      "date": "2024-02-16",
+      "subname": "computer science",
+      "classselect": "IV-ECE",
+      "duedate": "2024-02-24"
+    },
+    {
+      "id": "5e86",
+      "task": "Enter the string ",
+      "date": "2024-02-21",
+      "subname": " nbvnjhv",
+      "classselect": "IV-CSE",
+      "duedate": "2024-02-24"
+    }
+  ]
+}
