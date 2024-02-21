@@ -56,8 +56,9 @@ function StaffMain() {
  {userData && (
     <div className="col-lg-4">
     
-      <div className="card-body text-center">
-        <img src={userData.photo} alt="avatar" className="rounded img-fluid" style={{ width: '180px',  height:'220px'}} />
+      <div className="card-body text-center" >
+        
+        <img style={{ backgroundSize:'cover',  width: '260px', height:'21rem', borderRadius:'0.8rem' }} src={userData.photo} alt="avatar" className="rounded img-fluid" />
       </div>
 
       <p className='text-content-center my-3' style={{fontWeight:'10'}} ><h6> <span style={{color:'gray'}}> {userData.role}</span> </h6></p>
@@ -85,3 +86,12 @@ function StaffMain() {
 }
 
 export default StaffMain
+
+
+
+
+/* background-size: 'cover',
+      background-position:' 25% 62%'
+      width: '100%'
+      height: '20rem'
+      border-radius:' 0.8rem' */

@@ -7,7 +7,7 @@ import Description from '../../../Modals/Description';
 import UpdateStatueStaff from '../../../Modals/UpdateStatueStaff';
 import DeleteTask from '../../../Modals/DeleteTask';
 
-function StaffTable() {
+function StaffTable({searchQuery}) {
 
   const [modalShow, setModalShow] = useState(false);
 /*   const [selectedIssueId, setSelectedIssueId] = useState(null); */
@@ -20,19 +20,12 @@ function StaffTable() {
   const [IssueToDelete, setIssueToDelete] = useState(null);
 
 
-
-                    
-/*   const [modalDelete, setModalDelete] = React.useState(false);    */  //update
-
   useEffect(() => {
     dispatch(getIssuesFromServer());                    
   }, [dispatch]);
 
 
- /*  const handleStatusUpdate = (status) => {
-    setShowModal(true)         
-    dispatch(updateIssue(status)); // Dispatch the updateIssue action to update the issue in the Redux store
-  }; */
+
 
 
     let editIssueStatus =(issue) => {
@@ -41,15 +34,6 @@ function StaffTable() {
     }
   
    
- /*  const deleteReportField =(issue)=> {
-      setModalDelete(issue);
-    } */
-
-/* 
-    const deleteReportField = (issue) => {
-      setSelectedIssueId(issue);
-    }; */
-
 
 
   const openDescriptionModal = (issue) => { 
@@ -60,10 +44,22 @@ function StaffTable() {
   const closeDescriptionModal = () => {
     setSelectedIssueData(null);
   }
-/* 
-  let editModal =() => {
-    setShowModal(true)
-  } */
+
+
+  const [filteredProfileList, setFilteredProfileList] = useState([]);
+
+  useEffect(() => {
+    // Filter the profileList based on searchQuery
+    const filteredList = issuesList.filter((issue) => {
+      const priority = issue.priority && issue.priority.toString().toLowerCase(); // Convert to string and then lowercase
+      return priority && priority.includes(searchQuery.toLowerCase()); // Ensure priority is not null/undefined before applying .toLowerCase()
+    });
+    setFilteredProfileList(filteredList);
+  }, [issuesList, searchQuery]);
+  
+
+
+
 
   return (
     <div>
@@ -83,7 +79,7 @@ function StaffTable() {
             </tr>
           </thead>
           <tbody>
-            {issuesList && issuesList.map((issue, index) => (
+            { filteredProfileList.map((issue, index) => (
               <tr key={issue.id}>
                 <td>{index + 1}</td>
                 <td>{issue.date}</td>            

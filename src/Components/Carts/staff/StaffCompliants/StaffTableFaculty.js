@@ -12,7 +12,12 @@ import { getIssuesFromServerFaculty, setSelectedIssueFaculty } from '../../../..
 
 
                              
-function StaffTableFaculty() {
+function StaffTableFaculty({searchQuery}) {
+
+
+
+
+
 
 
 
@@ -51,18 +56,23 @@ function StaffTableFaculty() {
     setModalShow(true)
   }
 
- /*  const deleteTask = () => {
-    setShowModal(true);
-  }
 
-  const updateStatus = () => { // Renamed updateModal to updateStatus
-    setUpdateStatusModal(true);
-  }
 
-  const viewDes = () => {
-    setViewModal(true);
 
-  } */
+
+  const [filteredProfileList, setFilteredProfileList] = useState([]);
+
+  useEffect(() => {
+    // Filter the profileList based on searchQuery
+    const filteredList = issuesListFaculty.filter((issuefaculty) => {
+      const priority = issuefaculty.priority && issuefaculty.priority.toString().toLowerCase(); // Convert to string and then lowercase
+      return priority && priority.includes(searchQuery.toLowerCase()); // Ensure priority is not null/undefined before applying .toLowerCase()
+    });
+    setFilteredProfileList(filteredList);
+  }, [issuesListFaculty, searchQuery]);
+
+
+
   return (
 
    
@@ -74,7 +84,7 @@ function StaffTableFaculty() {
             <th>Issue Id</th>
             <th>Date</th>
             <th>Name</th>
-            <th>Department</th>                   
+            <th>Department</th>                                     
             <th>Priority</th>
             <th>Contact No.</th>
             <th>Issue On</th>
@@ -84,7 +94,7 @@ function StaffTableFaculty() {
         </thead>
 
         <tbody>
-        {issuesListFaculty && issuesListFaculty.map((issuefaculty, index) => (
+        { filteredProfileList.map((issuefaculty, index) => (
               <tr key={issuefaculty.id}>
                 <td>{index + 1}</td>
                 <td>{issuefaculty.date}</td>

@@ -15,7 +15,7 @@ function StudentProfile() {
   }, []);
      
 
-  useEffect(() => {
+  useEffect(() => {     
     // Check if loggedInUserId is truthy before making the API request
     if (loggedInUserId) {
       // Make the API request using loggedInUserId
@@ -50,7 +50,7 @@ function StudentProfile() {
       <div className="col-lg-4">
       {userData && (
         <div className="card-body text-center">
-          <img src={userData.photo} alt="avatar" className="rounded img-fluid" style={{ width: '170px' }} />
+          <img src={userData.photo} alt="avatar" className="rounded img-fluid" style={{ border:'1rem', backgroundSize:'cover',  width: '260px', height:'21rem', borderRadius:'0.8rem'}} />
           
         </div>)}
         <p className='text-content-center my-3' style={{fontWeight:'10'}} ><h6> <span style={{color:'gray'}}>{ userData && userData.role} </span> </h6></p>

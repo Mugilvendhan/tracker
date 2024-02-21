@@ -24,7 +24,7 @@ const  {issuesListFaculty}  = useSelector((state) => state.issuesfaculty);
                   <p><i className='bx bxs-graduation' style={{ fontSize: '50px', height: '50px', backgroundColor: 'aqua', color: '#fff', padding: '0px', borderRadius: '20%' }}></i></p>
                   <p><span style={{ fontWeight: '600', fontSize: 'large' }}>Student Reports</span></p>
                   
-                  <p><span style={{ fontSize: 'medium', fontWeight:'400' }}>  {`Currently ${issuesList.length || 0} Reports Raised`}</span></p>
+                  <p><span style={{ fontSize: 'medium', fontWeight:'400' }}>  {`Currently ${issuesList.length} Reports Raised`}</span></p>
                  {/*  <span style={{ fontSize: 'small' }}>more details</span> */}
                  <Button variant='dark' type="submit" style={{ backgroundColor: 'black', color: 'white',fontSize: 'small' }}  as={Link} to='/adminstudenttable'>view</Button>
 
@@ -40,7 +40,7 @@ const  {issuesListFaculty}  = useSelector((state) => state.issuesfaculty);
                   <p><span style={{ fontWeight: '600', fontSize: 'large' }}>Faculty Reports</span></p>
                   {/* <p><span style={{ fontSize: 'medium' }}>10+ Issues Processing currently</span></p> */}
                   {/* <span style={{ fontSize: 'small' }}>more details</span> */}
-                  <p><span style={{ fontSize: 'medium' }}> </span>{`Currently ${issuesListFaculty.length || 0} Reports Raised`}</p>
+                  <p><span style={{ fontSize: 'medium' }}> </span>{`Currently ${issuesListFaculty.length} Reports Raised`}</p>
                 
                  <Button variant='dark' type="submit" style={{ backgroundColor: 'black', color: 'white',fontSize: 'small' }} as={Link} to="/adminfacultytable">view</Button>
 

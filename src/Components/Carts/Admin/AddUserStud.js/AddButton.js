@@ -11,7 +11,6 @@ function AddButton() {
     }
   return (
     <div>
-
 <Button variant='dark' onClick={openModal}>
     Add User
 </Button>
