@@ -11,6 +11,7 @@ const initialState={
     
 const BASE_URL="http://localhost:5000/studentprofile"
 
+
 export const getUserFromServer= createAsyncThunk(
     "studentprofile/getUserFromServer",
     

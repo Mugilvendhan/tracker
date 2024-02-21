@@ -55,9 +55,8 @@ function AboutUsSection() {
 export default AboutUsSection;
  */
 
-
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import about from '../../Assets/img/about1.jpg'
 import about2 from '../../Assets/img/about2.jpg'
 function AboutUsSection() {
@@ -81,8 +80,9 @@ With a focus on cutting-edge research and hands-on learning experiences, we prep
           </p>
          </Col>
          <Col lg={6}>
-         <img src={about2} alt="About Us" className="img-fluid" style={{maxWidth:'85%', borderRadius:'1rem' }}/>
-         </Col>
+        {/*  <img src={about2} alt="About Us" className="img-fluid" style={{maxWidth:'85%', borderRadius:'1rem' }}/> */}
+        <img src={about2} alt="About Us" className="img-fluid" style={{maxWidth:'85%', borderRadius:'1rem' }}/>
+    </Col>
       
       
         </Row>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import FormSubmitModal from '../../../Modals/FormSubmitModal';
 import { useDispatch } from 'react-redux';
@@ -7,6 +7,57 @@ import FFormSubmitModal from '../../../Modals/FFormSubmitModal';
 //import { addIssueToServerFaculty } from '../../../../slices/FacultyIssueSlice';
 
 function FacultyAdminReportForm() {
+
+
+
+
+
+  
+
+  const [userData, setUserData] = useState(null);
+  const [loggedInUserId, setLoggedInUserId] = useState(null);
+  useEffect(() => {
+    // Retrieve loggedInUserId from local storage when the component mounts
+    const loggedInUserIdFromLocalStorage = localStorage.getItem('loggedInUserId');
+    if (loggedInUserIdFromLocalStorage) {
+      setLoggedInUserId(loggedInUserIdFromLocalStorage);
+    }
+  }, []);
+     
+
+  useEffect(() => {
+    // Check if loggedInUserId is truthy before making the API request
+    if (loggedInUserId) {
+      // Make the API request using loggedInUserId
+      fetch(`http://localhost:5000/studentprofile/${loggedInUserId}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Failed to fetch user details');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Handle the fetched data as needed
+          setUserData(data);
+          console.log(data);
+        })
+        .catch(error => {
+          console.error('Error fetching user details:', error);
+        });
+    }
+  }, [loggedInUserId]);
+
+
+
+
+
+
+
+
+
+
+
+
  
   const dispatch = useDispatch();
 
@@ -34,12 +85,12 @@ function FacultyAdminReportForm() {
       case 'name':
         error = value.trim() === '' ? 'First Name is required' : '';
         break;
-      case 'email':
+    /*   case 'email':
         error = value.trim() === '' ? 'Email Address is required' : !/\S+@\S+\.\S+/.test(value) ? 'Invalid email address' : '';
         break;
       case 'dept':
         error = value === 'Select' ? 'Department is required' : '';
-        break;
+        break; */
       case 'location':
         error = value === 'Select' ? 'Issue facing on is required' : '';
         break;
@@ -104,8 +155,9 @@ function FacultyAdminReportForm() {
       setShowModal(true);
       dispatch(addIssueToServerFaculty({
         date: formData.prt,
-        name: formData.name,
-        dept: formData.dept,
+        email:userData.email,
+        name: userData.name,
+        dept: userData.classdept,
         priority: formData.priority,
         mobile: formData.mobile,
         issueon: formData.location,
@@ -142,38 +194,51 @@ function FacultyAdminReportForm() {
           <div className="content-box mt-5 py-8">
             <div className="container py-4">
             <Form onSubmit={handleSubmit}>
-                <Row className='mb-3'>
-                  <Col>
-                    <div className='text-start'>
-                      <Form.Label htmlFor="name" className="form-label text-start">First Name<span style={{ color: 'red', textAlign: 'start' }}>*</span></Form.Label>
-                      <Form.Control type="text" id="name" name="name" value={formData.name} placeholder='Enter Full Name' onChange={handleChange} isInvalid={!!errors.name} />
+   
+            {
+                        userData && (
 
-                      <Form.Control.Feedback type="invalid">{errors.name}</Form.Control.Feedback>
-                    </div>
-                  </Col>
-                  <Col>
-                    <div className='text-start'>
-                      <Form.Label htmlFor="email" style={{ textAlign: 'start' }} className="form-label">Email Address<span style={{ color: 'red', textAlign: 'start' }}>*</span></Form.Label>
-                      <Form.Control type="text" id="email" name="email" value={formData.email} placeholder='Ex: john987@gmail.com' onChange={handleChange} isInvalid={!!errors.email} />
-                      <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
-                    </div>
-                  </Col>
-                </Row>
-                <Row className='mb-3'>
-                  <Col>
-                    <div className='text-start'>
-                      <Form.Label htmlFor="dept" className="form-label">Department<span style={{ color: 'red' }}>*</span></Form.Label>
-                      <Form.Select id="dept" name="dept" value={formData.dept} onChange={handleChange} isInvalid={!!errors.dept}>
-                        <option>Select</option>
-                        <option>CSE</option>
-                        <option>Mechanical</option>
-                        <option>Civil</option>
-                        <option>EEE</option>
-                        <option>ECE</option>
-                      </Form.Select>
-                      <Form.Control.Feedback type="invalid">{errors.dept}</Form.Control.Feedback>
-                    </div>
-                  </Col>
+                          <>
+
+
+<Row className='mb-3'>
+               
+                               
+               <Col>
+                 <div className='text-start'>
+                   <Form.Label htmlFor="name" className="form-label text-start">First Name<span style={{ color: 'red', textAlign: 'start' }}>*</span></Form.Label>
+                 
+                       <Form.Control type="text" id="name" name="name" value={userData.name} placeholder='Enter Full Name' onChange={handleChange} /* isInvalid={!!errors.name}  *//>
+                       
+                          
+                 </div>
+               </Col>
+               <Col>
+                 <div className='text-start'>
+                   <Form.Label htmlFor="email" style={{ textAlign: 'start' }} className="form-label">Email Address<span style={{ color: 'red', textAlign: 'start' }}>*</span></Form.Label>
+                   <Form.Control type="text" id="email" name="email" value={userData.email} placeholder='Ex: john987@gmail.com' onChange={handleChange} /* isInvalid={!!errors.email}  *//>
+                
+                 </div>
+               </Col>
+               
+                   
+
+             </Row>
+             <Row className='mb-3'>
+               <Col>
+                 <div className='text-start'>
+                   <Form.Label htmlFor="dept" className="form-label">Department<span style={{ color: 'red' }}>*</span></Form.Label>
+                   <Form.Select id="dept" name="dept" value={userData.classdept} onChange={handleChange} /* isInvalid={!!errors.dept} */>
+                     <option>Select</option>
+                     <option>CSE</option>
+                     <option>Mechanical</option>
+                     <option>Civil</option>
+                     <option>EEE</option>
+                     <option>ECE</option>
+                   </Form.Select>
+                   <Form.Control.Feedback type="invalid">{errors.dept}</Form.Control.Feedback>
+                 </div>
+               </Col>
                   <Col>
                     <div className='text-start'>
                       <Form.Label htmlFor="location" className="form-label">Issue facing on<span style={{ color: 'red' }}>*</span></Form.Label>
@@ -250,6 +315,8 @@ function FacultyAdminReportForm() {
                 <div style={{ padding: '3rem' }}>
                   <Button variant='dark' type="submit" style={{ backgroundColor: 'black', color: 'white' }} >Submit</Button>
                 </div>
+                </>
+                        )}
               </Form>
             </div>
           </div>

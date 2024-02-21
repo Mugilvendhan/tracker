@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container, Table } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { getIssuesFromServerFaculty } from '../../../../slices/FacultyIssueSlice'
@@ -6,12 +6,54 @@ import { getIssuesFromServerFaculty } from '../../../../slices/FacultyIssueSlice
 
 function FIssueTable() {
 
-  const {issuesListFaculty } = useSelector((state) =>state.issuesfaculty)
+  /* const {issuesListFaculty } = useSelector((state) =>state.issuesfaculty) */
    const dispatch=useDispatch()
 
    useEffect(() => {
     dispatch(getIssuesFromServerFaculty());                    
-  }, [dispatch]);     
+  }, [dispatch]);   
+        
+    
+
+  
+  const [userData, setUserData] = useState(null);
+  const [loggedName, setLoggedName] = useState(null);
+  useEffect(() => {
+    // Retrieve loggedInUserId from local storage when the component mounts
+    const loggedInNameFromLocalStorage = localStorage.getItem('loggedName');
+    if (loggedInNameFromLocalStorage) {
+      setLoggedName(loggedInNameFromLocalStorage);
+      
+    }
+  }, []);
+
+  useEffect(() => {
+    console.log(loggedName)
+    if (loggedName) {
+      // Make the API request using loggedName
+      fetch(`http://localhost:5000/issuesfaculty?name=${loggedName}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Failed to fetch user details');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Handle the fetched data as needed
+          setUserData(data);
+          console.log(data);
+        })
+        .catch(error => {
+          console.error('Error fetching user details:', error);
+        });
+    }
+  }, [loggedName]);
+        
+
+
+
+
+
    
   return (
 
@@ -32,7 +74,7 @@ function FIssueTable() {
     </thead>
     <tbody>
 
-    {issuesListFaculty && issuesListFaculty.map((issuefaculty, index) => (
+    {userData && userData.map((issuefaculty, index) => (
               <tr key={issuefaculty.id}>
                 <td>{index + 1}</td>
                 <td>{issuefaculty.date}</td>

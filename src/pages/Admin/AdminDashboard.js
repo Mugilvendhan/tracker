@@ -22,6 +22,13 @@ function AdminDashboard() {
         </Container>
         </div>
 
+
+              
+        <div className="content-box mt-3 py-3 mx-auto text-center align-content-center" style={{ maxWidth: '60rem'}}>
+            <ProgressGraph/>
+  
+        </div> 
+
         <div className="content-box mt-3 py-3 mx-auto text-center align-content-center" style={{ maxWidth: '60rem'}}>
         <Container className="mx-auto">
 
@@ -37,21 +44,7 @@ function AdminDashboard() {
         </Container>
         </div>
 
-        
-       {/*  <div className="content-box mt-3 py-3 mx-auto text-center align-content-center" style={{ maxWidth: '60rem'}}>
-        <Container className="mx-auto">
-
-          <Row>
-            <Col>
-            <ProgressGraph/>
-            </Col>
-            <Col>
-            <ProgressGraph/>
-            </Col>
-          </Row>
-      
-        </Container>
-        </div> */}
+  
         
     </div>
   )

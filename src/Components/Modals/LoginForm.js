@@ -138,6 +138,7 @@ const LoginForm = () => {
       
 const handleSubmit = (e) => {
   e.preventDefault();
+  if(validateEmail){
     const foundCredential = credentials.find(
       credential => credential.email === formData.email && credential.password === formData.password
     );
@@ -173,6 +174,8 @@ const handleSubmit = (e) => {
       alert('User Doesnot exist - Please Enter valid Email and Password');
       console.log('Invalid credentials');
     }
+
+  }
  
 };
 

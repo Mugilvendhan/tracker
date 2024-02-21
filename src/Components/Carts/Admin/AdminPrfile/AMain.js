@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
 import AInfo from './AInfo'
-import adminphoto from '../../../../Assets/img/Admin.jpg'
-
 function AMain() {
 
 
@@ -57,7 +55,7 @@ function AMain() {
     {userData && (      
     <div className="col-lg-4">
       <div className="card-body text-center">
-        <img src={userData.photo} alt="Admin" className="rounded img-fluid" style={{ width: '170px' }} />
+        <img src={userData.photo} alt="Admin" className="rounded img-fluid" style={{ border:'1rem', backgroundSize:'cover',  width: '220px', height:'18rem', borderRadius:'0.8rem'}} />
         
       </div>
       <p className='text-content-center my-3' style={{fontWeight:'10'}} ><h6> <span style={{color:'gray'}}> {userData.role}</span> </h6></p>

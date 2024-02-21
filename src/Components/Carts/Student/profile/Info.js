@@ -5,10 +5,6 @@ import { Container } from 'react-bootstrap';
 
 
 function StudentBasicInfo() {
-
-
-
-
   const [userData, setUserData] = useState(null);
   const [loggedInUserId, setLoggedInUserId] = useState(null);
   useEffect(() => {
