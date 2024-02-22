@@ -137,8 +137,9 @@ const LoginForm = () => {
 
       
 const handleSubmit = (e) => {
-  e.preventDefault();
   if(validateEmail){
+  e.preventDefault();
+ 
     const foundCredential = credentials.find(
       credential => credential.email === formData.email && credential.password === formData.password
     );
@@ -148,10 +149,14 @@ const handleSubmit = (e) => {
       console.log(foundCredential.name);
       console.log(foundCredential.email);
       console.log(foundCredential.role);
+      console.log(foundCredential.year);
+      console.log(foundCredential.classdept);
       setLoggedInUserId(foundCredential.id);
       localStorage.setItem('loggedInUserId', foundCredential.id);
       localStorage.setItem('loggedEmail', foundCredential.email);
       localStorage.setItem('loggedName', foundCredential.name);
+      localStorage.setItem('loggedYear', foundCredential.year);
+      localStorage.setItem('loggedDept', foundCredential.classdept);
       // Clear form data after successful login
       if(foundCredential.role==="admin"){
         window.location.href="/adminprofile";

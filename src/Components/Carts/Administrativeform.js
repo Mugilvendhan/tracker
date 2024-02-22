@@ -85,9 +85,9 @@ function AdminReportForm() {
     let error = '';
 
     switch (fieldName) {
-      case 'name':
+    /*   case 'name':
         error = value.trim() === '' ? 'First Name is required' : '';
-        break;
+        break; */
      /*  case 'email':
         error = value.trim() === '' ? 'Email Address is required' : !/\S+@\S+\.\S+/.test(value) ? 'Invalid email address' : '';
         break; */
@@ -165,7 +165,8 @@ function AdminReportForm() {
         mobile: formData.mobile,
         issueon: formData.location,
         description: formData.description,
-        status: "Pending"
+        status: "Pending",
+        year:userData.year
       }));
 
       setFormData({

@@ -66,7 +66,7 @@ function StaffInfo() {
         <p className="mb-0">Dept</p>
       </div>
       <div className="col-sm-9">
-        <p className="text-muted mb-0">{userData.year} {userData.classdept}</p>
+        <p className="text-muted mb-0">{/* {userData.year}  */}{userData.classdept}</p>
       </div>
     </div>
     <hr />
