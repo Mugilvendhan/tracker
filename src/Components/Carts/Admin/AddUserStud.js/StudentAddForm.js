@@ -721,9 +721,9 @@ function StudentAddFormModal(props) {
       case 'email':
         error = value.trim() === '' ? 'Email is required' : !/\S+@\S+\.\S+/.test(value) ? 'Invalid email address' : '';
         break;
-     /*  case 'year':
+       case 'year':
         error = value === '' ? 'Year is required' : '';
-        break;  */
+        break;  
         case 'dept':
         error = value === '' ? 'Department is required' : '';
         break;
@@ -833,7 +833,7 @@ function StudentAddFormModal(props) {
 </Form.Group>
 
 <Form.Group className="mb-3" controlId="password">
-      <Form.Label>Password</Form.Label>
+      <Form.Label>Password<span className="star text-danger">*</span></Form.Label>
       <div className="input-group">
         <Form.Control 
           type={showPassword ? 'text' : 'password'} 
@@ -854,15 +854,15 @@ function StudentAddFormModal(props) {
       {errors.password && <div className="text-danger">{errors.password}</div>}
     </Form.Group>
 <Form.Group className="mb-3" controlId="year">
-    <Form.Label>Year <span className="star text-danger">*</span></Form.Label>
-    <Form.Select name="year" value={formData.year} onChange={handleChange} isInvalid={!!errors.year}>
+    <Form.Label>Year  <span className="star text-danger">*</span> </Form.Label>
+    <Form.Select name="year" value={formData.year} onChange={handleChange}  isInvalid={!!errors.year} >
         <option>Select</option>
         <option>I</option>
         <option>II</option>
         <option>III</option>
         <option>IV</option>
     </Form.Select>
-    <Form.Control.Feedback type="invalid">{errors.year}</Form.Control.Feedback>
+    <Form.Control.Feedback type="invalid">{errors.year}</Form.Control.Feedback> 
 </Form.Group>
 
 <Form.Group className="mb-3" controlId="dept">

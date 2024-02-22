@@ -73,6 +73,50 @@ function StaffTableFaculty({searchQuery}) {
 
 
 
+  
+  const [userData, setUserData] = useState(null);
+
+  const [loggedDept, setLoggedDept] = useState(null);
+  useEffect(() => {
+    // Retrieve loggedInUserId from local storage when the component mounts
+    const loggedInYearFromLocalStorage = localStorage.getItem('loggedYear');
+    const loggedInDeptFromLocalStorage = localStorage.getItem('loggedDept');
+    console.log('loggedInYearFromLocalStorage:', loggedInYearFromLocalStorage);
+    console.log('loggedInDeptFromLocalStorage:', loggedInDeptFromLocalStorage);
+  
+  
+    if (loggedInDeptFromLocalStorage) {
+      setLoggedDept(loggedInDeptFromLocalStorage);
+    }
+  }, []);
+
+  useEffect(() => {
+    console.log( loggedDept);
+    if ( loggedDept) {
+      // Make the API request using loggedYear and loggedDept
+      fetch(`http://localhost:5000/issuesfaculty?dept=${loggedDept}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Failed to fetch user details');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Handle the fetched data as needed
+          setUserData(data);
+          console.log(data);
+        })
+        .catch(error => {
+          console.error('Error fetching user details:', error);
+        });
+    }
+  }, [ loggedDept]);
+  
+           
+
+
+
+
   return (
 
    
@@ -94,7 +138,7 @@ function StaffTableFaculty({searchQuery}) {
         </thead>
 
         <tbody>
-        { filteredProfileList.map((issuefaculty, index) => (
+        {/* { filteredProfileList.map((issuefaculty, index) => (
               <tr key={issuefaculty.id}>
                 <td>{index + 1}</td>
                 <td>{issuefaculty.date}</td>
@@ -109,13 +153,43 @@ function StaffTableFaculty({searchQuery}) {
 
                 <td className="text-center mx-5"> <b> {issuefaculty.status} </b><i className="bi bi-pencil-square mx-2" style={{ cursor: 'pointer' }} onClick={()=> editIssueStatus(issuefaculty)}></i></td> 
 
-      {/*   */}   <td><Button onClick={() => {setIssueToDelete(issuefaculty); setDeleteModalShow(true);}} variant="dark" ><i className="bi bi-trash"  ></i> </Button> </td>{/**/}
+     <td><Button onClick={() => {setIssueToDelete(issuefaculty); setDeleteModalShow(true);}} variant="dark" ><i className="bi bi-trash"  ></i> </Button> </td>
                   
                
-           {/*  <td className="text-center mx-5">Pending <i className="bi bi-pencil-square" style={{ cursor: 'pointer' }} onClick={updateStatus}></i></td>
-            <td><Button variant="dark" onClick={() => deleteTask()}><i className="bi bi-trash"></i></Button></td> */}
             </tr>
-            ))}
+            ))} */}
+
+
+{userData &&
+  filteredProfileList
+    .filter(issue => issue.dept === loggedDept) // Filter by loggedDept
+    .filter(issue => {
+      const priority = issue.priority && issue.priority.toString().toLowerCase();
+      return priority && priority.includes(searchQuery.toLowerCase());
+    }) // Filter by searchQuery
+    .map((issue, index) => (
+      <tr key={issue.id}>
+        <td>{index + 1}</td>
+        <td>{issue.date}</td>            
+        <td>{issue.name}</td>
+        <td>{issue.year} {issue.dept}</td>
+        <td>{issue.priority}</td>
+        <td>{issue.mobile}</td>
+        <td className="text-center mx-5">
+          {issue.issueon} 
+          <i className="bi bi-eye-fill mx-2" style={{ cursor: 'pointer' }} onClick={() => openDescriptionModal(issue)}></i>
+        </td>
+        <td className="text-center mx-5">
+          <b>{issue.status}</b>
+          <i className="bi bi-pencil-square mx-2" style={{ cursor: 'pointer' }} onClick={() => editIssueStatus(issue)}></i>
+        </td> 
+        <td>
+          <Button onClick={() => {setIssueToDelete(issue); setDeleteModalShow(true);}} variant="dark">
+            <i className="bi bi-trash"></i>
+          </Button>
+        </td>
+      </tr>
+    ))}
         </tbody>
       </Table>
       <FacultyDescription show={selectedIssueData !== null} onHide={closeDescriptionModal} issuefaculty={selectedIssueData} />

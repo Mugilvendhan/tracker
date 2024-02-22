@@ -1050,6 +1050,8 @@ function FTaskForm() {
   const [formData, setFormData] = useState({
     task: '',
     subject: '',
+    faculty:'',
+    year:'',
     classSelect: '',
     fileInput: '',
     startDate: '',
@@ -1070,9 +1072,15 @@ function FTaskForm() {
       case 'subject':
         error = value.trim() === '' ? 'Subject is required' : '';
         break;
+        case 'faculty':
+        error = value.trim() === '' ? 'Faculty is required' : '';
+        break;
       case 'classSelect':
         error = value === '' ? 'Select Class is required' : '';
         break;
+        case 'year':
+          error = value === '' ? ' Year is required' : '';
+          break;
         case 'startDate':
           error = value.trim() === '' ? 'Start Date is required' : '';
           if (!error) {
@@ -1134,6 +1142,8 @@ function FTaskForm() {
                 task:formData.task,
                 date: formData.startDate,
                 subname: formData.subject,
+                faculty:formData.faculty,
+                year:formData.year,
                 classselect: formData.classSelect,
                 duedate: formData.dueDate,
       }));
@@ -1141,6 +1151,8 @@ function FTaskForm() {
       setFormData({
         task: '',
         subject: '',
+        faculty:'',
+        year:'',
         classSelect: '',
         fileInput: '',
         startDate: '',
@@ -1184,21 +1196,17 @@ function FTaskForm() {
             </Form.Group>
           </Col>
           <Col md={6}>
-            <Form.Group controlId="classSelect">
-              <Form.Label>Select Class <span style={{ color: 'red' }}>*</span></Form.Label>
-              <Form.Select
-                name="classSelect"
-                value={formData.classSelect}
+            <Form.Group controlId="faculty">
+              <Form.Label>Faculty Name <span style={{ color: 'red' }}>*</span></Form.Label>
+              <Form.Control
+                type="text"
+                name="faculty"
+                placeholder="Enter faculty Name"
+                value={formData.faculty}
                 onChange={handleChange}
-                isInvalid={!!errors.classSelect}
-              >
-                <option value="">Select Class</option>
-                <option value="IV-CSE">IV-CSE</option>
-                <option value="IV-ECE">IV-ECE</option>
-                <option value="IV-EEE">IV-EEE</option>
-                <option value="IV-IT">IV-IT</option>
-              </Form.Select>
-              <Form.Control.Feedback type="invalid">{errors.classSelect}</Form.Control.Feedback>
+                isInvalid={!!errors.faculty}
+              />
+              <Form.Control.Feedback type="invalid">{errors.faculty}</Form.Control.Feedback>
             </Form.Group>
           </Col>
           <Col md={6}>
@@ -1208,6 +1216,39 @@ function FTaskForm() {
               <Form.Control.Feedback type="invalid">{errors.fileInput}</Form.Control.Feedback>
             </Form.Group>
           </Col>
+          <Col md={6}>
+          <Form.Group className="mb-3" controlId="year">
+    <Form.Label>Year <span className="star text-danger">*</span></Form.Label>
+    <Form.Select name="year" value={formData.year} onChange={handleChange} isInvalid={!!errors.year}>
+        <option>Select</option>
+        <option>I</option>
+        <option>II</option>
+        <option>III</option>
+        <option>IV</option>
+    </Form.Select>
+    <Form.Control.Feedback type="invalid">{errors.year}</Form.Control.Feedback>
+</Form.Group>
+          </Col>
+          <Col md={6}>
+            <Form.Group controlId="classSelect">
+              <Form.Label>Select Class <span style={{ color: 'red' }}>*</span></Form.Label>
+              <Form.Select
+                name="classSelect"
+                value={formData.classSelect}
+                onChange={handleChange}
+                isInvalid={!!errors.classSelect}
+              >
+               <option>Select</option>
+        <option>CSE</option>
+        <option>Mechanical</option>
+        <option>Civil</option>
+        <option>EEE</option>
+        <option>ECE</option>
+              </Form.Select>
+              <Form.Control.Feedback type="invalid">{errors.classSelect}</Form.Control.Feedback>
+            </Form.Group>
+          </Col>
+       
           <Col md={6}>
             <Form.Group controlId="startDate">
               <Form.Label>Start Date <span style={{ color: 'red' }}>*</span></Form.Label>
@@ -1234,6 +1275,7 @@ function FTaskForm() {
               <Form.Control.Feedback type="invalid">{errors.dueDate}</Form.Control.Feedback>
             </Form.Group>
           </Col>
+          
         </Row>
         <Button type="submit" className="btn btn-dark ms-1">Assign</Button>
       </Form>

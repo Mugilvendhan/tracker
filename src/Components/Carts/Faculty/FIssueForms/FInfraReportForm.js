@@ -87,9 +87,9 @@ function FacultyInfraReportForm() {
     let error = '';
 
     switch (fieldName) {
-      case 'name':
+    /*   case 'name':
         error = value.trim() === '' ? 'First Name is required' : '';
-        break;
+        break; */
     /*   case 'email':
         error = value.trim() === '' ? 'Email Address is required' : !/\S+@\S+\.\S+/.test(value) ? 'Invalid email address' : '';
         break;

@@ -1,162 +1,6 @@
 {
   "issues": [
     {
-      "id": "842c",
-      "date": "2024-02-13",
-      "name": "Kowshikraj k",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "6383711534",
-      "issueon": "Grade",
-      "description": "hi im mugil",
-      "status": "Completed"
-    },
-    {
-      "id": "a17f",
-      "date": "2024-02-13",
-      "name": "Kowshikraj k",
-      "dept": "CSE",
-      "priority": "Low",
-      "mobile": "6383711534",
-      "issueon": "Grade",
-      "description": "hloooo byeee",
-      "status": "In Review"
-    },
-    {
-      "id": "4244",
-      "date": "2024-02-13",
-      "name": "MUGIL ",
-      "dept": "CSE",
-      "priority": "Low",
-      "mobile": "6383711534",
-      "issueon": "Grade",
-      "description": "hloooo byeee",
-      "status": "In Review"
-    },
-    {
-      "id": "2d86",
-      "date": "2024-02-13",
-      "name": "MUGIL ",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "6383711534",
-      "issueon": "Academic Facility",
-      "description": "kjasdnckja slcknals",
-      "status": "Pending"
-    },
-    {
-      "id": "bb35",
-      "date": "2024-02-13",
-      "name": "MUGIL",
-      "dept": "CSE",
-      "priority": "Low",
-      "mobile": "6383711534",
-      "issueon": "Academic Facility",
-      "description": "hloooo byeee",
-      "status": "Pending"
-    },
-    {
-      "id": "d5d7",
-      "date": "2024-02-13",
-      "name": "Kowshikraj k",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "6383711534",
-      "issueon": "Academic Facility",
-      "description": "hi im mugil",
-      "status": "Pending"
-    },
-    {
-      "id": "dd8c",
-      "date": "2024-02-15",
-      "name": "Kowshikraj k",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "6383711534",
-      "issueon": "Grade",
-      "description": "hi im mugil",
-      "status": "Declined"
-    },
-    {
-      "id": "341c",
-      "date": "2024-02-14",
-      "name": "Kowshikraj k",
-      "dept": "CSE",
-      "priority": "Low",
-      "mobile": "6383711534",
-      "issueon": "Academic Facility",
-      "description": "hi im mugil",
-      "status": "Pending"
-    },
-    {
-      "id": "4ab5",
-      "date": "2024-02-13",
-      "name": "MUGIL",
-      "dept": "CSE",
-      "priority": "High",
-      "mobile": "6383711534",
-      "issueon": "Grade",
-      "description": "alke",
-      "status": "Pending"
-    },
-    {
-      "id": "f385",
-      "date": "2024-02-14",
-      "name": "MUGIL",
-      "dept": "Mechanical",
-      "priority": "High",
-      "mobile": "6383711534",
-      "issueon": "Class room",
-      "description": "hi im mugil",
-      "status": "Pending"
-    },
-    {
-      "id": "4559",
-      "date": "2024-02-14",
-      "name": "MUGIL",
-      "dept": "Mechanical",
-      "priority": "Medium",
-      "mobile": "6383711534",
-      "issueon": "Equipment",
-      "description": "hloooo byeee",
-      "status": "Pending"
-    },
-    {
-      "id": "7a67",
-      "date": "2024-02-13",
-      "name": "MUGIL",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "6383711534",
-      "issueon": "Grade",
-      "description": "kjasdnckja slcknals",
-      "status": "Pending"
-    },
-    {
-      "id": "4340",
-      "date": "2024-02-13",
-      "email": "stud1001@gmail.com",
-      "name": "Kowshikraj k",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "6383711534",
-      "issueon": "Grade",
-      "description": "hloooo byeee",
-      "status": "Pending"
-    },
-    {
-      "id": "b481",
-      "date": "2024-02-06",
-      "email": "stud1001@gmail.com",
-      "name": "Kowshikraj k",
-      "dept": "Civil",
-      "priority": "Medium",
-      "mobile": "6383711534",
-      "issueon": "Grade",
-      "description": "hi im mugil",
-      "status": "Pending"
-    },
-    {
       "id": "926f",
       "date": "2024-02-13",
       "email": "mugilvendhan1312@gmail.com",
@@ -178,7 +22,7 @@
       "mobile": "6383711534",
       "issueon": "Laboratory",
       "description": "hloooo byeee",
-      "status": "Pending"
+      "status": "In Review"
     },
     {
       "id": "36d9",
@@ -190,7 +34,7 @@
       "mobile": "6383711534",
       "issueon": "Course material",
       "description": "hlooo jiii",
-      "status": "Pending"
+      "status": "Declined"
     },
     {
       "id": "0c56",
@@ -202,55 +46,7 @@
       "mobile": "6383711534",
       "issueon": "Registration",
       "description": "hloooo byeee",
-      "status": "Pending"
-    },
-    {
-      "id": "5ed6",
-      "date": "2024-02-13",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
-      "priority": "Low",
-      "mobile": "6383711534",
-      "issueon": "Grade",
-      "description": "alke",
-      "status": "Pending"
-    },
-    {
-      "id": "c69e",
-      "date": "2024-02-19",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "6383711534",
-      "issueon": "Enrollment",
-      "description": "kjasdnckja slcknals",
-      "status": "Pending"
-    },
-    {
-      "id": "2954",
-      "date": "2024-02-15",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
-      "priority": "High",
-      "mobile": "6383711534",
-      "issueon": "Class room",
-      "description": "kjasdnckja slcknals",
-      "status": "Pending"
-    },
-    {
-      "id": "c15b",
-      "date": "2024-02-09",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "6383711534",
-      "issueon": "Registration",
-      "description": "alke",
-      "status": "Pending"
+      "status": "In Review"
     },
     {
       "id": "8d06",
@@ -277,16 +73,91 @@
       "status": "Pending"
     },
     {
-      "id": "ed67",
-      "date": "2024-02-15",
-      "email": "stud1004@gmail.com",
-      "name": "ANAISHA",
+      "id": "9102",
+      "date": "2024-02-19",
+      "email": "stud1001@gmail.com",
+      "name": "KOWSHIKRAJ K",
       "dept": "CSE",
-      "priority": "High",
-      "mobile": "9383711534",
-      "issueon": "Laboratory",
-      "description": "hlooo jiii",
+      "priority": "Low",
+      "mobile": "9898989898",
+      "issueon": "Equipment",
+      "description": "mmmmm",
       "status": "Pending"
+    },
+    {
+      "id": "493d",
+      "date": "2024-02-13",
+      "email": "stud1001@gmail.com",
+      "name": "KOWSHIKRAJ K",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "9898989898",
+      "issueon": "Others",
+      "description": "mmmmm",
+      "status": "Pending"
+    },
+    {
+      "id": "269b",
+      "date": "2024-02-21",
+      "email": "stud1001@gmail.com",
+      "name": "KOWSHIKRAJ K",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "9898989898",
+      "issueon": "Equipment",
+      "description": "mmmmm",
+      "status": "Pending"
+    },
+    {
+      "id": "87ee",
+      "date": "2024-02-14",
+      "email": "stud1001@gmail.com",
+      "name": "KOWSHIKRAJ K",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "9898989898",
+      "issueon": "Academic Facility",
+      "description": "mmmmm",
+      "status": "Pending"
+    },
+    {
+      "id": "1f31",
+      "date": "2024-02-14",
+      "email": "stud1001@gmail.com",
+      "name": "KOWSHIKRAJ K",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "9898989898",
+      "issueon": "Academic Facility",
+      "description": "mmmmm",
+      "status": "Pending",
+      "year": "IV"
+    },
+    {
+      "id": "b5c1",
+      "date": "2024-02-15",
+      "email": "stud1001@gmail.com",
+      "name": "KOWSHIKRAJ K",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "9898989898",
+      "issueon": "Laboratory",
+      "description": "mmmmm",
+      "status": "Approved",
+      "year": "IV"
+    },
+    {
+      "id": "933d",
+      "date": "2024-02-05",
+      "email": "stud1002@gmail.com",
+      "name": "DHRUV",
+      "dept": "EEE",
+      "priority": "Medium",
+      "mobile": "9898989898",
+      "issueon": "Registration",
+      "description": "mmmmm",
+      "status": "Pending",
+      "year": "III"
     }
   ],
   "issuesfaculty": [
@@ -310,7 +181,7 @@
       "mobile": "6383711534",
       "issueon": "Grade",
       "description": "kjasdnckja slcknals",
-      "status": "Pending"
+      "status": "In Review"
     },
     {
       "id": "6a23",
@@ -381,7 +252,7 @@
       "mobile": "6383711534",
       "issueon": "Academic Facility",
       "description": "hloooo byeee",
-      "status": "Pending"
+      "status": "In Review"
     },
     {
       "id": "37d1",
@@ -417,7 +288,19 @@
       "mobile": "6383711534",
       "issueon": "Others",
       "description": "kjasdnckja slcknals",
-      "status": "Pending"
+      "status": "Completed"
+    },
+    {
+      "id": "ecfd",
+      "date": "2024-02-20",
+      "email": "faculty001@gmail.com",
+      "name": "ISHAAN",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "9898989898",
+      "issueon": "Grade",
+      "description": "mmmmm",
+      "status": "Declined"
     }
   ],
   "studentprofile": [
@@ -454,7 +337,7 @@
       "role": "Student",
       "address": "30/11,Arisipalayam Main Road Salem",
       "password": "Stud@1001",
-      "photo": "https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?w=740&t=st=1708366908~exp=1708367508~hmac=f9056734893f720f05bc8d00b90ff0af912754c973420c05ae62c238a0d09b4a.jpg"
+      "photo": "https://i.pinimg.com/564x/08/39/23/083923e2c7f3de1f0c472501b143d42b.jpg"
     },
     {
       "id": "12b7",
@@ -591,28 +474,64 @@
   ],
   "assigntask": [
     {
-      "id": "5f39",
-      "task": "kjn",
+      "id": "494d",
+      "task": "Enter the string kow",
       "date": "2024-02-23",
       "subname": "kmnj",
-      "classselect": "IV-CSE",
+      "faculty": "kkkkkk",
+      "year": "IV",
+      "classselect": "CSE",
+      "duedate": "2024-02-23"
+    },
+    {
+      "id": "348d",
+      "task": "Print Reverse Pyramid using JS",
+      "date": "2024-02-24",
+      "subname": "Software Code",
+      "faculty": "Arun",
+      "year": "II",
+      "classselect": "ECE",
+      "duedate": "2024-02-27"
+    },
+    {
+      "id": "5d18",
+      "task": "hlo",
+      "date": "2024-02-23",
+      "subname": "Software Code",
+      "faculty": "Arun",
+      "year": "IV",
+      "classselect": "CSE",
       "duedate": "2024-02-24"
     },
     {
-      "id": "652d",
-      "task": "Enter the string ",
-      "date": "2024-02-16",
-      "subname": "computer science",
-      "classselect": "IV-ECE",
-      "duedate": "2024-02-24"
+      "id": "f257",
+      "task": "hlo",
+      "date": "2024-03-01",
+      "subname": "hohoh",
+      "faculty": "Arun",
+      "year": "III",
+      "classselect": "EEE",
+      "duedate": "2024-03-10"
     },
     {
-      "id": "5e86",
-      "task": "Enter the string ",
-      "date": "2024-02-21",
-      "subname": " nbvnjhv",
-      "classselect": "IV-CSE",
-      "duedate": "2024-02-24"
+      "id": "3f97",
+      "task": "Print Reverse Pyramid using JS",
+      "date": "2024-02-23",
+      "subname": "Software Code",
+      "faculty": "Arun",
+      "year": "III",
+      "classselect": "EEE",
+      "duedate": "2024-03-01"
+    },
+    {
+      "id": "ea7f",
+      "task": "Print Reverse Pyramid using JS",
+      "date": "2024-02-23",
+      "subname": "Software Code",
+      "faculty": "Arun",
+      "year": "IV",
+      "classselect": "Civil",
+      "duedate": "2024-02-25"
     }
   ]
 }

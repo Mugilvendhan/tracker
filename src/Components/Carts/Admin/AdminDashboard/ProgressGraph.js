@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Table } from "react-bootstrap";
 import { Chart } from "react-google-charts";
 const ProgressGraph = () => {
   useEffect(() => {
@@ -52,6 +52,8 @@ const ProgressGraph = () => {
 
   return (
     <Container>
+      <Table responsive>
+
       <div className="row">
         <div className="col mb-3">
           <div className="card h-100">
@@ -75,6 +77,8 @@ const ProgressGraph = () => {
           </div>
         </div>
       </div>
+      </Table>
+      
     </Container>
   );
 };

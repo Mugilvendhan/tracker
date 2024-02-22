@@ -1,15 +1,33 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 //import { getIssuesFromServerFaculty } from '../../../../slices/IssueSlice';
 import { Container, Table } from 'react-bootstrap';
 import { getIssuesFromServerFaculty } from '../../../../slices/FacultyIssueSlice';
 
-function AFacultyTable() {
+function AFacultyTable({searchQuery}) {
     const { issuesListFaculty } = useSelector((state) => state.issuesfaculty);
     const dispatch=useDispatch();
     useEffect(() => {
       dispatch(getIssuesFromServerFaculty());                    
     }, [dispatch]);
+
+
+
+
+    const [filteredProfileList, setFilteredProfileList] = useState([]);
+
+    useEffect(() => {
+      // Filter the profileList based on searchQuery
+      const filteredList = issuesListFaculty.filter((issuefaculty) => {
+        const priority = issuefaculty.priority && issuefaculty.priority.toString().toLowerCase(); // Convert to string and then lowercase
+        return priority && priority.includes(searchQuery.toLowerCase()); // Ensure priority is not null/undefined before applying .toLowerCase()
+      });
+      setFilteredProfileList(filteredList);
+    }, [issuesListFaculty, searchQuery]);
+
+
+
+
 
     
     return (
@@ -30,7 +48,7 @@ function AFacultyTable() {
         </thead>
         <tbody>
   
-        {issuesListFaculty && issuesListFaculty.map((issuefaculty, index) => (
+        { filteredProfileList.map((issuefaculty, index) => (
                 <tr key={issuefaculty.id}>
                   <td>{index + 1}</td>
                   <td>{issuefaculty.date}</td>

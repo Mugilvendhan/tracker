@@ -58,7 +58,7 @@ function FTaskTable() {
                   <td>{task.date}</td>
                   <td>{task.subname}</td>
                   <td>{task.task}</td>
-                  <td>{task.classselect}</td>
+                  <td> {task.year} {task.classselect}</td>
                   <td>{task.duedate}</td>
                   {/* <td><Button variant="dark" onClick={() => deleteTask()}><i class="bi bi-trash"></i></Button></td> */}
 
