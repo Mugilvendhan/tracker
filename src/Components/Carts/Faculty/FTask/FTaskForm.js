@@ -1139,9 +1139,9 @@ function FTaskForm() {
         /* case 'faculty':
         error = value.trim() === '' ? 'Faculty is required' : '';
         break; */
-      case 'classSelect':
+    /*   case 'classSelect':
         error = value === '' ? 'Select Class is required' : '';
-        break;
+        break; */
         case 'year':
           error = value === '' ? ' Year is required' : '';
           break;
@@ -1189,7 +1189,7 @@ function FTaskForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-
+    window.location.reload();
     const newErrors = {};
     Object.keys(formData).forEach(fieldName => {
       newErrors[fieldName] = validateField(fieldName, formData[fieldName]);
@@ -1208,7 +1208,7 @@ function FTaskForm() {
                 subname: formData.subject,
                 faculty:userData.name,
                 year:formData.year,
-                classselect: formData.classSelect,
+                classselect: userData.classdept,
                 duedate: formData.dueDate,
       }));
 
@@ -1226,30 +1226,6 @@ function FTaskForm() {
       console.log('Form validation failed');
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
   return (
     <>
@@ -1322,9 +1298,9 @@ function FTaskForm() {
               <Form.Label>Select Class <span style={{ color: 'red' }}>*</span></Form.Label>
               <Form.Select
                 name="classSelect"
-                value={formData.classSelect}
+                value={userData && userData.classdept}
                 onChange={handleChange}
-                isInvalid={!!errors.classSelect}
+              /*   isInvalid={!!errors.classSelect} */
               >
                <option>Select</option>
         <option>CSE</option>
@@ -1333,7 +1309,7 @@ function FTaskForm() {
         <option>EEE</option>
         <option>ECE</option>
               </Form.Select>
-              <Form.Control.Feedback type="invalid">{errors.classSelect}</Form.Control.Feedback>
+             {/*  <Form.Control.Feedback type="invalid">{errors.classSelect}</Form.Control.Feedback> */}
             </Form.Group>
           </Col>
        

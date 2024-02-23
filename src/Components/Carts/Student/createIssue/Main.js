@@ -27,7 +27,7 @@ function Cardhold() {
     }
   ];
   
-
+ 
   return (
     /* <div style={{ padding: '2rem' }}>
       <div className="row align-items-center">

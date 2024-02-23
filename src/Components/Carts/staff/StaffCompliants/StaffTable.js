@@ -290,7 +290,7 @@ function StaffTable({searchQuery}) {
   return (
     <div>
       <Container className='table-responsive'>
-        <Table striped bordered hover>
+       <Table striped bordered hover>
           <thead>
             <tr>
               <th>Issue Id</th>
@@ -337,7 +337,10 @@ function StaffTable({searchQuery}) {
     ))}
 
           </tbody>
-        </Table>
+        </Table> 
+
+
+
         <div>{error ? <h2>{error}</h2> : null}</div>
         <Description show={selectedIssueData !== null} onHide={closeDescriptionModal} issue={selectedIssueData} />
         <UpdateStatueStaff show={modalShow} onHide={()=> setModalShow(false)} /> 
