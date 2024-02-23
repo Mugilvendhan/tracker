@@ -12,6 +12,7 @@ function FacultyDeleteAssignment(props) {
         dispatch(removeTaskFromServer(props.task));
         dispatch(removeTask(props.task));
         props.onHide(); // Hide the modal after deleting the issue
+        window.location.reload();
     };
 
     return (

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { getIssuesFromServer } from '../../../../slices/IssueSlice';
 
 function ReportTable() {

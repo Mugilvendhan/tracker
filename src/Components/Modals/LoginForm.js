@@ -79,62 +79,6 @@ const LoginForm = () => {
     },[]
     );
 
-
-
-
-
-
-//   /* const handleSubmit = (e) => {
-//     e.preventDefault();
-//     // const emailValid = validateEmail();
-//     // const passwordValid = validatePassword();
-
-//    /*  if (emailValid && passwordValid) {
-//       const userEmail = formData.email.trim();
-//       const userPassword = formData.password.trim();
-
-//       // Perform authentication
-//       if (userEmail === 'stud1@gmail.com' && userPassword === 'Student@123') {
-        
-//        window.location.href="/studentprofile";
-//       } else if (userEmail === 'faculty@gmail.com' && userPassword === 'Faculty@123') {
-//         window.location.href = "/facultyprofile";
-//       } else if (userEmail === 'staff1@gmail.com' && userPassword === 'Staff@123') {
-//         window.location.href = "/staffprofile";
-//       } else if (userEmail === 'admin1@gmail.com' && userPassword === 'Admin@123') {
-//         window.location.href = "/adminprofile";
-//       } else {
-//         alert(`Try with the following credentials:
-// - Student email: stud1@gmail.com, password: Student@123
-// - Faculty email: faculty@gmail.com, password: Faculty@123
-// - Admin email: admin1@gmail.com, password: Admin@123
-// - Staff email: staff1@gmail.com, password: Staff@123`);
-
-//       }
-//     }  */
-//     if (Object.keys(errors).length === 0) {
-//       // Validation successful, show success modal
-//       const foundCredential = credentials.find(
-//         credential => credential.email === formData.email && credential.password === formData.password
-//       );
-  
-//       if (foundCredential) {
-//         console.log(foundCredential.id);
-//         setLoggedInUserId(foundCredential.id);
-//         localStorage.setItem('loggedInUserId', foundCredential.id);
-//         // setShowSuccessModal(true);
-//         setFormData({
-//           email: '',
-//           password: ''
-//         });
-//       }
-    
-//     else {
-//       console.log('Form validation failed');
-//     }
-//   };
-// } */
-
       
 const handleSubmit = (e) => {
   if(validateEmail){

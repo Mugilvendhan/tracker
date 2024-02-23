@@ -81,18 +81,7 @@ function AdminNav() {
 
       <LogoutModal show={showModal} onHide={()=> setShowModal(false)} />
 
-       {/* <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Logout</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>Are you sure want to logout?</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant='dark' onClick={handleCloseModal}>No</Button>
-          <Button variant='dark' as={Link} to='/'>Yes</Button>
-        </Modal.Footer>
-      </Modal>  */}
+     
     </>
   );
 }

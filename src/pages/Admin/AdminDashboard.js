@@ -12,7 +12,7 @@ function AdminDashboard() {
         <AdminNav/>
     
          <div className='align-content-center my-5 py-4'>
-            <h2>Dashboard</h2>
+            <h2>DASHBOARD</h2>
          </div>
 
 

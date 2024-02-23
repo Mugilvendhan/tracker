@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Button, Row, Col, Container } from 'react-bootstrap';
-import FormSubmitModal from '../../../Modals/FormSubmitModal';
+//import FormSubmitModal from '../../../Modals/FormSubmitModal';
 import { useDispatch } from 'react-redux';
 import { addIssueToServerFaculty } from '../../../../slices/FacultyIssueSlice';
 import FFormSubmitModal from '../../../Modals/FFormSubmitModal';
@@ -188,7 +188,7 @@ function FacultyAdminReportForm() {
         <section style={{ backgroundColor: '#fffcfc', marginTop: '80px' }}>
           <div className="row align-items-center">
             <div className="col text-center">
-              <h2>Report On Administrative Issues</h2>
+              <h2>REPORT ON ADMINISTRATIVE ISSUES</h2>
             </div>
           </div>
           <div className="content-box mt-5 py-8">

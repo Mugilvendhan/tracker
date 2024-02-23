@@ -13,7 +13,7 @@ import MyIssues from './pages/Student/MyIssues';
 import  Profile  from './pages/Student/Profile'; 
 import Landingpage from './pages/Landingpage';
 import CreateIssues from './pages/Student/CreateIssues';
-import InfraReportForm from './Components/Carts/Infraform';
+//import InfraReportForm from './Components/Carts/Infraform';
 import InfrastructureForm from './pages/Student/InfrastructureForm'
 import Tasks from './pages/Student/Tasks';
 import FProfile from './pages/Faculty/FProfile';
@@ -28,10 +28,10 @@ import StaffCompliaints from './pages/Staff/StaffCompliaints';
 import AdminProfile from './pages/Admin/AdminProfile';
 import StaffComplaintFaculty from './pages/Staff/StaffComplaintFaculty';
 import AdminDashboard from './pages/Admin/AdminDashboard';
-import AStudentTable from './Components/Carts/Admin/ACompliantTables.js/AStudentTable';
+//import AStudentTable from './Components/Carts/Admin/ACompliantTables.js/AStudentTable';
 import AStudentReportTable from './pages/Admin/AStudentReportTable';
 import AFacultyReportTable from './pages/Admin/AFacultyReportTable';
-import AddUserStud from './Components/Carts/Admin/AddUserStud.js/AddStudTable';
+//import AddUserStud from './Components/Carts/Admin/AddUserStud.js/AddStudTable';
 import AddStudentPage from './pages/Admin/AddStudentPage';
 function App() {
   return (

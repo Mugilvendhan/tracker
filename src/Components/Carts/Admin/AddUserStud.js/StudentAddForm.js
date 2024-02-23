@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import { Button, Container, Form, Modal, ModalBody } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { addUserToServer, getUserFromServer } from '../../../../slices/StudentProfileSlice';
+import { addUserToServer } from '../../../../slices/StudentProfileSlice';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 
@@ -133,7 +133,7 @@ function StudentAddFormModal(props) {
     <div>
       <Modal {...props}>
         <Modal.Header closeButton>
-          <Modal.Title>User Details</Modal.Title>
+          <Modal.Title>ENTER USER DETAILS</Modal.Title>
         </Modal.Header>
         <ModalBody>
           <Container>

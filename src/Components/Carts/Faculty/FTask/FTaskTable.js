@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Table } from 'react-bootstrap';
-import DeleteTask from '../../../Modals/DeleteTask'; 
-import { useDispatch, useSelector } from 'react-redux';
+//import DeleteTask from '../../../Modals/DeleteTask'; 
+import { useDispatch } from 'react-redux';
 import { getTaskFromServer, setSelectedTask } from '../../../../slices/AddTaskSlice';
 import FacultyDeleteAssignment from '../../../Modals/FDeleteAssignment';
 import UpdateTaskModal from '../../../Modals/UpdateTaskModal';

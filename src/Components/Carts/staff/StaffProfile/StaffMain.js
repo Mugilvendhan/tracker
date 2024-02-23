@@ -46,7 +46,7 @@ function StaffMain() {
          <section style={{ backgroundColor: '#fffcfc', marginTop: '80px' }}>
     <div className="container align-items-center ">
       <div className="col text-center">
-        <h2>My Profile</h2>
+        <h2>MY PROFILE</h2>
       </div>
     </div>
     <Container>
@@ -58,7 +58,7 @@ function StaffMain() {
     
       <div className="card-body text-center" >
         
-        <img style={{ backgroundSize:'cover',  width: '260px', height:'21rem', borderRadius:'0.8rem' }} src={userData.photo} alt="avatar" className="rounded img-fluid" />
+        <img style={{boxShadow:'0px 1px 10px 0px' , backgroundSize:'cover',  width: '260px', height:'21rem', borderRadius:'0.8rem' }} src={userData.photo} alt="avatar" className="rounded img-fluid" />
       </div>
 
       <p className='text-content-center my-3' style={{fontWeight:'10'}} ><h6> <span style={{color:'gray'}}> {userData.role}</span> </h6></p>
