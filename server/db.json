@@ -70,81 +70,7 @@
       "mobile": "6383711534",
       "issueon": "others",
       "description": "hlooo jiii",
-      "status": "Pending"
-    },
-    {
-      "id": "9102",
-      "date": "2024-02-19",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
-      "priority": "Low",
-      "mobile": "9898989898",
-      "issueon": "Equipment",
-      "description": "mmmmm",
-      "status": "Pending"
-    },
-    {
-      "id": "493d",
-      "date": "2024-02-13",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "9898989898",
-      "issueon": "Others",
-      "description": "mmmmm",
-      "status": "Pending"
-    },
-    {
-      "id": "269b",
-      "date": "2024-02-21",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "9898989898",
-      "issueon": "Equipment",
-      "description": "mmmmm",
-      "status": "Pending"
-    },
-    {
-      "id": "87ee",
-      "date": "2024-02-14",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "9898989898",
-      "issueon": "Academic Facility",
-      "description": "mmmmm",
-      "status": "Pending"
-    },
-    {
-      "id": "1f31",
-      "date": "2024-02-14",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "9898989898",
-      "issueon": "Academic Facility",
-      "description": "mmmmm",
-      "status": "Pending",
-      "year": "IV"
-    },
-    {
-      "id": "b5c1",
-      "date": "2024-02-15",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
-      "priority": "Medium",
-      "mobile": "9898989898",
-      "issueon": "Laboratory",
-      "description": "mmmmm",
-      "status": "Approved",
-      "year": "IV"
+      "status": "Approved"
     },
     {
       "id": "933d",
@@ -160,16 +86,29 @@
       "year": "III"
     },
     {
-      "id": "5ed3",
-      "date": "2024-02-21",
-      "email": "stud1001@gmail.com",
-      "name": "KOWSHIKRAJ K",
-      "dept": "CSE",
+      "id": "84db",
+      "date": "2024-02-20",
+      "email": "stud1002@gmail.com",
+      "name": "DHRUV",
+      "dept": "EEE",
       "priority": "Medium",
       "mobile": "6383711534",
-      "issueon": "Grade",
-      "description": "kjasdnckja slcknals",
+      "issueon": "Laboratory",
+      "description": "hi im mugil",
       "status": "Pending",
+      "year": "III"
+    },
+    {
+      "id": "8113",
+      "date": "2024-02-13",
+      "email": "stud1004@gmail.com",
+      "name": "ANAISHA",
+      "dept": "Civil",
+      "priority": "Medium",
+      "mobile": "6383711534",
+      "issueon": "Fees payment",
+      "description": "kjasdnckja slcknals",
+      "status": "Approved",
       "year": "IV"
     }
   ],
@@ -314,6 +253,18 @@
       "issueon": "Grade",
       "description": "mmmmm",
       "status": "Declined"
+    },
+    {
+      "id": "c60f",
+      "date": "2024-02-08",
+      "email": "faculty001@gmail.com",
+      "name": "ISHAAN",
+      "dept": "CSE",
+      "priority": "Low",
+      "mobile": "9383711534",
+      "issueon": "Equipment",
+      "description": "kjasdnckja slcknals",
+      "status": "Pending"
     }
   ],
   "studentprofile": [
@@ -495,30 +446,6 @@
       "address": "302/2, Raav Street Anna Nagar, Guindy , Chennai",
       "password": "Stud@1005",
       "photo": "https://i.pinimg.com/564x/a6/76/37/a67637ad9778f02788e4a2d31e28037e.jpg"
-    },
-    {
-      "id": "aea0",
-      "name": "NIMIT",
-      "email": "faculty005@gmail.com",
-      "year": "III",
-      "classdept": "Mechanical",
-      "mobile": "9993711534",
-      "role": "Faculty",
-      "address": "66/1, TVK road , RK nagar , ammapet Salem",
-      "password": "Faculty@005",
-      "photo": "https://i.pinimg.com/564x/1b/02/6b/1b026ba7395e9d5eef19eafcdf90df51.jpg"
-    },
-    {
-      "id": "a26f",
-      "name": "MAHIKA",
-      "email": "staff006@gmail.com",
-      "year": "III",
-      "classdept": "Mechanical",
-      "mobile": "9685736452",
-      "role": "Staff",
-      "address": "88/1, Kumar street , Rupaa nagar , Ammapet , Salem",
-      "password": "Staff@006",
-      "photo": "https://i.pinimg.com/564x/c6/a4/f8/c6a4f82974daabfbe403f4b15b006ef3.jpg"
     }
   ],
   "assigntask": [
@@ -601,6 +528,36 @@
       "year": "III",
       "classselect": "EEE",
       "duedate": "2024-03-09"
+    },
+    {
+      "id": "e623",
+      "task": "Enter the string kow",
+      "date": "2024-02-24",
+      "subname": "kmnj",
+      "faculty": "ISHAAN",
+      "year": "IV",
+      "classselect": "CSE",
+      "duedate": "2024-02-25"
+    },
+    {
+      "id": "32cd",
+      "task": "Enter the string kow",
+      "date": "2024-02-24",
+      "subname": " nbvnjhv",
+      "faculty": "ISHAAN",
+      "year": "IV",
+      "classselect": "EEE",
+      "duedate": "2024-02-24"
+    },
+    {
+      "id": "54c9",
+      "task": "heloooo mugil",
+      "date": "2024-02-24",
+      "subname": "hiiiiii",
+      "faculty": "ISHAAN",
+      "year": "IV",
+      "classselect": "CSE",
+      "duedate": "2024-02-24"
     }
   ]
 }

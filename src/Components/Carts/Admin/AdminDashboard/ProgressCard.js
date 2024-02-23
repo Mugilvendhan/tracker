@@ -211,7 +211,7 @@ import { Button, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function ProgressCard() {
-  const [studentReportsCount, setStudentReportsCount] = useState(() => {
+    const [studentReportsCount, setStudentReportsCount] = useState(() => {
     const count = localStorage.getItem('studentReportsCount');
     return count ? parseInt(count) : 0;
   });
