@@ -30,7 +30,7 @@ function FRaiseIssue() {
         <div style={{ padding: '2rem' }}>
           <div className="row align-items-center">
             <div className="col text-center">
-              <h2>Raise Your New Issues</h2>
+              <h2>RAISE NEW ISSUE</h2>
             </div>
           </div>
     

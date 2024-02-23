@@ -7,7 +7,7 @@ function FTaskTitle() {
         <Container>
      <div className="row align-items-center mb-0">
     <div className="col text-center  mb-0">
-      <h2>Assign Tasks</h2>
+      <h2>ASSIGN TASKS</h2>
     </div>
     </div>
    </Container>

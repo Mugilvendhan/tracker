@@ -29,31 +29,11 @@ function Cardhold() {
   
  
   return (
-    /* <div style={{ padding: '2rem' }}>
-      <div className="row align-items-center">
-        <div className="col text-center">
-          <h2>Raise Your New Issues</h2>
-        </div>
-      </div>
-
-      <Container fluid className='table-responsive' >
-        <div className="content-box mt-5 ">
-          <Row xs={1} md={2} lg={3} className="justify-content-center">
-          {issueCardDetails.map((issue, index) => (
-           <Col key={index}  className="mb-3">
-             <IssueCart cateimg={issue.img} category={issue.category} cardtext={issue.cardText} btnname="Raise Issue" route={issue.route} />
-           </Col>
-))}
-
-          </Row>
-        </div>
-      </Container>
-    </div> */
 
     <div style={{ padding: '2rem' }}>
   <div className="row align-items-center">
     <div className="col text-center">
-      <h2>Raise Your New Issues</h2>
+      <h2>RAISE NEW ISSUE</h2>
     </div>
   </div>
 

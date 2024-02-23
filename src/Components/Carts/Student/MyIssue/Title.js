@@ -6,7 +6,7 @@ function ReportedIssueTitle() {
    <Container>
      <div className="row align-items-center">
     <div className="col text-center">
-      <h2>Reported Issue Status</h2>
+      <h2>REPORTED ISSUE STATUS</h2>
     </div>
     </div>
    </Container>

@@ -5,7 +5,7 @@ function CompliantTitle() {
     <>
         <div className="container align-items-center ">
       <div className="col text-center">
-        <h2>Student Reported Complaints</h2>
+        <h2>STUDENT ISSUE REPORTS</h2>
       </div>
     </div>
     </>

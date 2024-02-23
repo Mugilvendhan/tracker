@@ -87,78 +87,6 @@ export const addIssueToServer = createAsyncThunk(
         }
         );
   
-//FACULTY ASUYNCTHRUNK
-
-/* 
-export const getIssuesFromServerFaculty= createAsyncThunk(
-    "issuesfaculty/getIssuesFromServerFaculty",
-    
-    async(_,{rejectWithValue})=>{
-        const response=await fetch("http://localhost:5000/issuesfaculty/")
-        if(response.ok){
-            const jsonResponse=await response.json()
-            console.log(jsonResponse)
-            return jsonResponse
-        }
-        else{
-            return rejectWithValue({error:'issues not found'})
-        }
-    }
-);
-
-export const addIssueToServerFaculty = createAsyncThunk(
-    "issuesfaculty/addIssueToServerFaculty",
-    async ( issuefaculty,{rejectWithValue }) => {
-      const options ={
-          method:"POST",
-          body:JSON.stringify(issuefaculty),
-          headers:{"content-type":"application/json;charset=UTF-8"},
-      }
-          const response = await fetch("http://localhost:5000/issuesfaculty/",options);
-      if (response.ok) {
-        const data = response.json();
-        return data;
-      } else {
-        return rejectWithValue({ error: "Something Went Wrong in user addition" });
-      }
-    }
-    );
-
-    export const updateIssueToServerFaculty = createAsyncThunk(
-        "issuesfaculty/updateIssueToServerFaculty",
-        async ( issuefaculty,{rejectWithValue }) => {
-          const options ={
-              method:"PATCH",
-              body:JSON.stringify(issuefaculty),
-              headers:{"content-type":"application/json;charset=UTF-8"},
-          }
-              const response = await fetch("http://localhost:5000/issuesfaculty/"+issuefaculty.id,options);
-          if (response.ok) {
-            const data = response.json();
-            return data;
-          } else {
-            return rejectWithValue({ error: "Something Went Wrong in Issue UPDATE" });
-          }
-        }
-        );
-
-
-        export const removeIssueFromServerFaculty = createAsyncThunk(
-            "issuesfaculty/removeIssueFromServerFaculty",
-            async ( issuefaculty,{rejectWithValue }) => {
-              const options ={
-                  method:"DELETE",
-                  body:JSON.stringify(issuefaculty),
-                  headers:{"content-type":"application/json;charset=UTF-8"},
-              }
-                  const response = await fetch("http://localhost:5000/issuesfaculty/"+issuefaculty.id,options);
-              if (response.ok) {
-                const data = response.json();
-                return data;
-              } 
-            }
-            );
- */
 
 
 
@@ -198,14 +126,7 @@ const issueSlice = createSlice({
 
 
 
-            //FACULTY REDUCER
-
-
-            
-/* 
-          setSelectedIssueFaculty: (state, action) => {
-            state.selectedField = action.payload;
-          } */
+           
 
 
         
@@ -272,69 +193,6 @@ const issueSlice = createSlice({
       .addCase(removeIssueFromServer.rejected, (state, action) => {
         state.error = action.payload.error; 
       })
-
-   
-
-
-      //FACULTY EXTRATHRUNK
-
-     /*  .addCase(getIssuesFromServerFaculty.pending,(state)=>{
-        state.isLoading=true
-    })
-    .addCase(getIssuesFromServerFaculty.fulfilled,(state,action)=>{
-        state.isLoading=false
-        state.error=''
-        state.issuesList = action.payload
-    })
-    .addCase(getIssuesFromServerFaculty.rejected,(state,action)=>{
-        state.error=action.payload.error
-        state.isLoading=false
-        state.issuesList=[]
-    })
-
-
-      
-    .addCase(addIssueToServerFaculty.pending, (state) => {})
-    .addCase(addIssueToServerFaculty.fulfilled, (state, action) => {
-      state.issuesList.push(action.payload);
-      state.error = "";
-    })
-    .addCase(addIssueToServerFaculty.rejected, (state, action) => {
-      state.error = action.payload.error;
-      
-    })
-
-
-    .addCase(updateIssueToServerFaculty.fulfilled, (state, action) => {
-        
-         state.issuesList = state.issuesList.map((issuefaculty) =>
-         issuefaculty.id === action.payload.id ? action.payload : issuefaculty
-         );
-         state.error = "";
-       
-       })
-       .addCase(updateIssueToServerFaculty.pending, (state) => {
-     
-       })
-       .addCase(updateIssueToServerFaculty.rejected, (state, action) => {
-         state.error = action.payload.error;
-      
- 
- 
-       })
-
-       .addCase(removeIssueFromServerFaculty.pending, (state) => {})
-       .addCase(removeIssueFromServerFaculty.fulfilled, (state, action) => {
-         state.issuesList = state.issuesList.filter(
-             (issuefaculty) => issuefaculty.id !== action.payload.id
-           );
-         state.error = "";
-       })
-       .addCase(removeIssueFromServerFaculty.rejected, (state, action) => {
-         state.error = action.payload.error; 
-       }) */
-
-
 
     
     },

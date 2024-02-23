@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import StudentBasicInfo from '../profile/Info';
-import studentphoto from '../../../../Assets/img/pic1.jpg';
+//import studentphoto from '../../../../Assets/img/pic1.jpg';
 import { Container } from 'react-bootstrap';
 
 function StudentProfile() {
@@ -40,7 +40,7 @@ function StudentProfile() {
     <section style={{ backgroundColor: '#fffcfc', marginTop: '80px' }}>
       <div className="container align-items-center ">
         <div className="col text-center">
-          <h2>My Profile</h2>
+          <h2>MY PROFILE</h2>
         </div>
       </div>
       <Container>
@@ -50,7 +50,7 @@ function StudentProfile() {
       <div className="col-lg-4">
       {userData && (
         <div className="card-body text-center">
-          <img src={userData.photo} alt="avatar" className="rounded img-fluid" style={{ border:'1rem', backgroundSize:'cover',  width: '260px', height:'21rem', borderRadius:'0.8rem'}} />
+          <img src={userData.photo} alt="avatar" className="rounded img-fluid" style={{boxShadow:'0px 1px 10px 0px' , border:'1rem', backgroundSize:'cover',  width: '260px', height:'21rem', borderRadius:'0.8rem'}} />
           
         </div>)}
         <p className='text-content-center my-3' style={{fontWeight:'10'}} ><h6> <span style={{color:'gray'}}>{ userData && userData.role} </span> </h6></p>

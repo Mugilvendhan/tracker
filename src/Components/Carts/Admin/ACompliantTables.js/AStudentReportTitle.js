@@ -7,7 +7,8 @@ function AStudentReportTitle() {
         <Container>
      <div className="row align-items-center">
     <div className="col text-center">
-      <h2>Student Reported Issue Status</h2>
+   
+      <h2>STUDENTS REPORTED ISSUE STATUS</h2>
     </div>
     </div>
    </Container>

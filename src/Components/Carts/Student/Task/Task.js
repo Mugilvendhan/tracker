@@ -1,7 +1,7 @@
 import { Button, Container } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 import Task1PDF from '../../../../Assets/doc/Task1.pdf'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { getTaskFromServer } from '../../../../slices/AddTaskSlice';
 

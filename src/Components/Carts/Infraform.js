@@ -197,7 +197,7 @@ function InfraReportForm() {
         <section style={{ backgroundColor: '#fffcfc', marginTop: '80px' }}>
           <div className="row align-items-center">
             <div className="col text-center">
-              <h2>Report On Infrastructure Issues</h2>
+              <h2>REPORT ON INFRASTRUCTURE ISSUE</h2>
             </div>
           </div>
           <div className="content-box mt-5 py-8">
