@@ -158,6 +158,19 @@
       "description": "mmmmm",
       "status": "Pending",
       "year": "III"
+    },
+    {
+      "id": "5ed3",
+      "date": "2024-02-21",
+      "email": "stud1001@gmail.com",
+      "name": "KOWSHIKRAJ K",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "6383711534",
+      "issueon": "Grade",
+      "description": "kjasdnckja slcknals",
+      "status": "Pending",
+      "year": "IV"
     }
   ],
   "issuesfaculty": [
@@ -464,12 +477,48 @@
       "name": "ANAISHA",
       "email": "stud1004@gmail.com",
       "year": "IV",
-      "classdept": "CSE",
+      "classdept": "Civil",
       "mobile": "9993711534",
       "role": "Student",
       "address": "33/5, TMK nagar rajan Street Thiru Road, Ammapet Salem",
       "password": "Stud@1004",
       "photo": "https://i.pinimg.com/564x/39/23/33/392333c90c0b18eb27d1b8bb5cfcd756.jpg"
+    },
+    {
+      "id": "5b62",
+      "name": "BHAVIN KUMAR",
+      "email": "stud1005@gmail.com",
+      "year": "II",
+      "classdept": "Mechanical",
+      "mobile": "7563329874",
+      "role": "Student",
+      "address": "302/2, Raav Street Anna Nagar, Guindy , Chennai",
+      "password": "Stud@1005",
+      "photo": "https://i.pinimg.com/564x/a6/76/37/a67637ad9778f02788e4a2d31e28037e.jpg"
+    },
+    {
+      "id": "aea0",
+      "name": "NIMIT",
+      "email": "faculty005@gmail.com",
+      "year": "III",
+      "classdept": "Mechanical",
+      "mobile": "9993711534",
+      "role": "Faculty",
+      "address": "66/1, TVK road , RK nagar , ammapet Salem",
+      "password": "Faculty@005",
+      "photo": "https://i.pinimg.com/564x/1b/02/6b/1b026ba7395e9d5eef19eafcdf90df51.jpg"
+    },
+    {
+      "id": "a26f",
+      "name": "MAHIKA",
+      "email": "staff006@gmail.com",
+      "year": "III",
+      "classdept": "Mechanical",
+      "mobile": "9685736452",
+      "role": "Staff",
+      "address": "88/1, Kumar street , Rupaa nagar , Ammapet , Salem",
+      "password": "Staff@006",
+      "photo": "https://i.pinimg.com/564x/c6/a4/f8/c6a4f82974daabfbe403f4b15b006ef3.jpg"
     }
   ],
   "assigntask": [
@@ -532,6 +581,26 @@
       "year": "IV",
       "classselect": "Civil",
       "duedate": "2024-02-25"
+    },
+    {
+      "id": "6240",
+      "task": "Enter the string ",
+      "date": "2024-02-25",
+      "subname": ",m kj",
+      "faculty": "ISHAAN",
+      "year": "II",
+      "classselect": "ECE",
+      "duedate": "2024-02-29"
+    },
+    {
+      "id": "703c",
+      "task": "kj",
+      "date": "2024-03-01",
+      "subname": "mugillll",
+      "faculty": "AADI",
+      "year": "III",
+      "classselect": "EEE",
+      "duedate": "2024-03-09"
     }
   ]
 }

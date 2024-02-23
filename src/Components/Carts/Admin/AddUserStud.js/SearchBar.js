@@ -13,7 +13,7 @@ function SearchBar({ setSearchQuery }) {
        <Col xs={12} md={6} className='text-start' >
       <input
         type='text'
-        placeholder='Search by Name'
+        placeholder='Search by Name / Role'
         onChange={handleSearchChange}
         className='form-control'
                          

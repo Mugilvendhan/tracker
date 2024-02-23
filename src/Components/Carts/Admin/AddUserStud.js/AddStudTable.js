@@ -217,6 +217,7 @@ function AddUserStud({ searchQuery }) {
   useEffect(() => {
     // Filter the profileList based on searchQuery
     const filteredList = profileList.filter((profilestud) =>
+      profilestud.role.toLowerCase().includes(searchQuery.toLowerCase()) ||
       profilestud.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setFilteredProfileList(filteredList);

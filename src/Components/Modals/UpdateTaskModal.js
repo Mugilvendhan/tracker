@@ -105,6 +105,7 @@ import { Button, Form, Modal } from 'react-bootstrap';
 
 function UpdateTaskModal(props) {
   const [subname, setSubName] = useState('');
+  const [task, setTask] = useState('');
   const [date, setDate] = useState('');
   const [duedate, setDueDate] = useState('');
   const [classselect, setClassSelect] = useState('');
@@ -117,6 +118,7 @@ function UpdateTaskModal(props) {
   useEffect(() => {
     if (Object.keys(selectedFieldTask).length !== 0) {
       setSubName(selectedFieldTask.subname);
+      setTask(selectedFieldTask.task);
       setId(selectedFieldTask.id);
       setDate(selectedFieldTask.date);             
       setDueDate(selectedFieldTask.duedate);          
@@ -127,7 +129,8 @@ function UpdateTaskModal(props) {
   const editIssue = () => {
     if (validateForm()) {
       props.onHide();
-      dispatch(updateTaskToServer({ id, subname, date, duedate, classselect }));
+      dispatch(updateTaskToServer({ id, subname, date,task, duedate, classselect }));
+      window.location.reload();
     }
   };
 
@@ -157,6 +160,10 @@ function UpdateTaskModal(props) {
 
     if (!subname.trim()) {
       errors.subname = 'Subject Name is required';
+      isValid = false;
+    }
+    if (!task.trim()) {
+      errors.task = 'Task is required';
       isValid = false;
     }
 
@@ -201,6 +208,20 @@ function UpdateTaskModal(props) {
             <Form.Control.Feedback type="invalid">{errors.subname}</Form.Control.Feedback>
           </Form.Group>
 
+
+          <Form.Group controlId="formSubname" style={{ marginBottom: '20px' }}>
+            <Form.Label>Task</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter Task "
+              name="task"
+              value={task}
+              onChange={(e) => setTask(e.target.value)}
+              isInvalid={!!errors.task}
+            />
+            <Form.Control.Feedback type="invalid">{errors.task}</Form.Control.Feedback>
+          </Form.Group>
+{/* 
           <Form.Group controlId="formclass" style={{ marginBottom: '20px' }}>
             <Form.Label>Class</Form.Label>
             <Form.Select
@@ -214,7 +235,7 @@ function UpdateTaskModal(props) {
               <option value="IV-IT">IV-IT</option>
             </Form.Select>
             <Form.Control.Feedback type="invalid">{errors.classselect}</Form.Control.Feedback>
-          </Form.Group>
+          </Form.Group> */}
 
           <Form.Group controlId="formdue" style={{ marginBottom: '20px' }}>
             <Form.Label>Due Date</Form.Label>
@@ -228,7 +249,7 @@ function UpdateTaskModal(props) {
             <Form.Control.Feedback type="invalid">{errors.duedate}</Form.Control.Feedback>
           </Form.Group>
 
-          <Button className="my-4" variant="dark" onClick={editIssue} style={{ backgroundColor: 'black', color: 'white' }}>Update Task</Button>
+          <Button className="my-4" variant="dark" onClick={editIssue} style={{ backgroundColor: 'black', color: 'white' }} >Update Task</Button>
         </Form>
       </Modal.Body>
       <Modal.Footer></Modal.Footer>

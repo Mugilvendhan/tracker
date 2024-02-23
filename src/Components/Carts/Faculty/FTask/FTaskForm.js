@@ -1037,13 +1037,77 @@ export default FTaskForm;
 
 
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Form, Button, Col, Row } from 'react-bootstrap';
 import TaskAssigned from '../../../Modals/TaskAssigned';
 import { useDispatch } from 'react-redux';
 import { addTaskToServer } from '../../../../slices/AddTaskSlice';
 
 function FTaskForm() {
+
+
+
+  const [userData, setUserData] = useState(null);
+  const [loggedInUserId, setLoggedInUserId] = useState(null);
+  useEffect(() => {
+    // Retrieve loggedInUserId from local storage when the component mounts
+    const loggedInUserIdFromLocalStorage = localStorage.getItem('loggedInUserId');
+    if (loggedInUserIdFromLocalStorage) {
+      setLoggedInUserId(loggedInUserIdFromLocalStorage);
+    }
+  }, []);
+     
+
+  useEffect(() => {
+    // Check if loggedInUserId is truthy before making the API request
+    if (loggedInUserId) {
+      // Make the API request using loggedInUserId
+      fetch(`http://localhost:5000/studentprofile/${loggedInUserId}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Failed to fetch user details');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Handle the fetched data as needed
+          setUserData(data);
+          console.log(data);
+        })
+        .catch(error => {
+          console.error('Error fetching user details:', error);
+        });
+    }
+  }, [loggedInUserId]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   const dispatch = useDispatch();
   const [showModal, setShowModal] = useState(false);
 
@@ -1072,9 +1136,9 @@ function FTaskForm() {
       case 'subject':
         error = value.trim() === '' ? 'Subject is required' : '';
         break;
-        case 'faculty':
+        /* case 'faculty':
         error = value.trim() === '' ? 'Faculty is required' : '';
-        break;
+        break; */
       case 'classSelect':
         error = value === '' ? 'Select Class is required' : '';
         break;
@@ -1142,7 +1206,7 @@ function FTaskForm() {
                 task:formData.task,
                 date: formData.startDate,
                 subname: formData.subject,
-                faculty:formData.faculty,
+                faculty:userData.name,
                 year:formData.year,
                 classselect: formData.classSelect,
                 duedate: formData.dueDate,
@@ -1162,6 +1226,30 @@ function FTaskForm() {
       console.log('Form validation failed');
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
   return (
     <>
@@ -1202,11 +1290,11 @@ function FTaskForm() {
                 type="text"
                 name="faculty"
                 placeholder="Enter faculty Name"
-                value={formData.faculty}
+                value={userData && userData.name}
                 onChange={handleChange}
-                isInvalid={!!errors.faculty}
+                /* isInvalid={!!errors.faculty} */
               />
-              <Form.Control.Feedback type="invalid">{errors.faculty}</Form.Control.Feedback>
+            {/*   <Form.Control.Feedback type="invalid">{errors.faculty}</Form.Control.Feedback> */}
             </Form.Group>
           </Col>
           <Col md={6}>
