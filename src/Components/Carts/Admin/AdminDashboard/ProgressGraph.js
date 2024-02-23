@@ -68,7 +68,7 @@ const ProgressGraph = () => {
                 width={"50rem"}
                 height={"270px"}
                 chartType="ComboChart"
-                loader={<div>Loading Chart</div>}
+                loader={<div>Loading...</div>}
                 data={barChartData}
                 options={barChartOptions}
                 rootProps={{ "data-testid": "2" }}

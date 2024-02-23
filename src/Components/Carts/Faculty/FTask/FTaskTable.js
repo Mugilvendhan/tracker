@@ -7,9 +7,51 @@ import FacultyDeleteAssignment from '../../../Modals/FDeleteAssignment';
 import UpdateTaskModal from '../../../Modals/UpdateTaskModal';
 
 function FTaskTable() {
+
+
+
+
+  const [userData, setUserData] = useState(null);
+  const [loggedName, setLoggedName] = useState(null);
+  useEffect(() => {
+    // Retrieve loggedInUserId from local storage when the component mounts
+    const loggedInNameFromLocalStorage = localStorage.getItem('loggedName');
+    if (loggedInNameFromLocalStorage) {
+      setLoggedName(loggedInNameFromLocalStorage);
+      
+    }
+  }, []);
+
+  useEffect(() => {
+    console.log(loggedName)
+    if (loggedName) {
+      // Make the API request using loggedName
+      fetch(`http://localhost:5000/assigntask?faculty=${loggedName}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Failed to fetch user details');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Handle the fetched data as needed
+          setUserData(data);
+          console.log(data);
+        })
+        .catch(error => {
+          console.error('Error fetching user details:', error);
+        });
+    }
+  }, [loggedName]);
+          
+
+
+
+
+
 /*   const [showModal, setShowModal] = useState(false); */
 
-  const {taskAssign} = useSelector((state) =>state.assigntask)
+  //const {taskAssign} = useSelector((state) =>state.assigntask)
   const dispatch=useDispatch();
 
 
@@ -51,7 +93,7 @@ function FTaskTable() {
 
         <tbody>
           {
-                 taskAssign && taskAssign.map((task,index)=> (
+                 userData && userData.map((task,index)=> (
 
                   <tr key={task.id}>
                   <td>{index +1}</td>
