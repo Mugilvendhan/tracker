@@ -155,6 +155,32 @@
       "description": "Students facing challenges with textbook purchase procedures. Provide guidance for accessibility.",
       "status": "Pending",
       "year": "IV"
+    },
+    {
+      "id": "22ae",
+      "date": "2024-02-15",
+      "email": "stud1001@gmail.com",
+      "name": "KOWSHIKRAJ K",
+      "dept": "CSE",
+      "priority": "Low",
+      "mobile": "9893711534",
+      "issueon": "Course material",
+      "description": "Faculty members seeking updates to course evaluation processes. Ensure feedback for improvement",
+      "status": "Pending",
+      "year": "IV"
+    },
+    {
+      "id": "86b8",
+      "date": "2024-02-09",
+      "email": "stud1003@gmail.com",
+      "name": "DEV GURU",
+      "dept": "ECE",
+      "priority": "Low",
+      "mobile": "9983711534",
+      "issueon": "Class room",
+      "description": "Reported issues with classroom temperature control. Ensure comfort for effective learning environments.",
+      "status": "Approved",
+      "year": "II"
     }
   ],
   "issuesfaculty": [
@@ -336,6 +362,18 @@
       "mobile": "9983711534",
       "issueon": "Academic Facility",
       "description": "Faculty members seeking updates to course evaluation processes. Ensure feedback for improvement.",
+      "status": "Pending"
+    },
+    {
+      "id": "a901",
+      "date": "2024-02-15",
+      "email": "faculty003@gmail.com",
+      "name": "AHANA",
+      "dept": "ECE",
+      "priority": "Medium",
+      "mobile": "9883711534",
+      "issueon": "others",
+      "description": "Maintenance required for damaged campus walkways. Ensure safe passage for pedestrians",
       "status": "Pending"
     }
   ],
@@ -654,6 +692,16 @@
       "year": "II",
       "classselect": "Mechanical",
       "duedate": "2024-03-09"
+    },
+    {
+      "id": "0519",
+      "task": "Renewable Energy Integration Study",
+      "date": "2024-02-25",
+      "subname": " Renewable Energy Systems",
+      "faculty": "AADI",
+      "year": "II",
+      "classselect": "EEE",
+      "duedate": "2024-02-29"
     }
   ]
 }
