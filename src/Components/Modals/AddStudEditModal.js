@@ -100,7 +100,7 @@ function StudentAddFormModal(props) {
     <div>
       <Modal {...props}>
         <Modal.Header closeButton>
-          <Modal.Title>User Details</Modal.Title>
+          <Modal.Title>UPDATE DETAIL</Modal.Title>
         </Modal.Header>
         <ModalBody>
           <Container>

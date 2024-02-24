@@ -21,7 +21,7 @@ function DeleteStudUser(props) {
             </Modal.Header>
             <Modal.Body>
               <p>Are you sure you want to delete this Issue?</p>
-          <p style={{color:'red'}}>This action will permanently delete the associated student."</p>
+          <p style={{color:'red'}}>This action will permanently delete the associated User."</p>
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="dark" onClick={props.onHide}>
