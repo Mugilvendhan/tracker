@@ -27,6 +27,7 @@ function StudentAddFormModal(props) {
   const[address,setAddress]=useState('');            
   const[password,setPassword]=useState('');
   const[id,setId]=useState(0);
+  const[year,setYear]=useState('');
 
   const {selectedUser} = useSelector((state)=> state.studentprofile)
   const dispatch = useDispatch();
@@ -42,13 +43,14 @@ function StudentAddFormModal(props) {
         setAddress(selectedUser.address);
         setPassword(selectedUser.password);
         setPhoto(selectedUser.photo);
+        setYear(selectedUser.year);
 
     }
    },[selectedUser]);
 
    const editIssue = () => {
         props.onHide();
-      dispatch(updateUserToServer({ id,role,name, email, classdept, mobile,photo,address,password }));
+      dispatch(updateUserToServer({ id,role,name, email, classdept,year, mobile,photo,address,password }));
   
   };
 
@@ -138,6 +140,19 @@ function StudentAddFormModal(props) {
       </div>
       {errors.password && <div className="text-danger">{errors.password}</div>}
     </Form.Group>
+
+    <Form.Group className="mb-3" controlId="year">
+    <Form.Label>Year  <span className="star text-danger">*</span> </Form.Label>
+    <Form.Select name="year" value={year} onChange={(e)=>setYear(e.target.value)}>
+        <option>Select</option>
+        <option>I</option>
+        <option>II</option>
+        <option>III</option>
+        <option>IV</option>
+        <option>Entire</option>
+    </Form.Select>
+    <Form.Control.Feedback type="invalid">{errors.year}</Form.Control.Feedback> 
+</Form.Group>
 
 <Form.Group className="mb-3" controlId="dept">
     <Form.Label>Department <span className="star text-danger">*</span></Form.Label>

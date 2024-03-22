@@ -63,9 +63,8 @@ function StaffTable({searchQuery}) {
   const [loggedDept, setLoggedDept] = useState(null);
   useEffect(() => {
     // Retrieve loggedInUserId from local storage when the component mounts
-    const loggedInYearFromLocalStorage = localStorage.getItem('loggedYear');
+    
     const loggedInDeptFromLocalStorage = localStorage.getItem('loggedDept');
-    console.log('loggedInYearFromLocalStorage:', loggedInYearFromLocalStorage);
     console.log('loggedInDeptFromLocalStorage:', loggedInDeptFromLocalStorage);
   
   

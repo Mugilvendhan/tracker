@@ -179,6 +179,7 @@ function StudentAddFormModal(props) {
         <option>II</option>
         <option>III</option>
         <option>IV</option>
+        <option>Entire</option>
     </Form.Select>
     <Form.Control.Feedback type="invalid">{errors.year}</Form.Control.Feedback> 
 </Form.Group>

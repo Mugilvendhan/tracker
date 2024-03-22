@@ -8,7 +8,7 @@ function UpdateTaskModal(props) {
   const [task, setTask] = useState('');
   const [date, setDate] = useState('');
   const [duedate, setDueDate] = useState('');
-  const [classselect, setClassSelect] = useState('');
+  const [year, setYear] = useState('');
   const [errors, setErrors] = useState({});         
 
   const [id, setId] = useState(0);
@@ -22,14 +22,14 @@ function UpdateTaskModal(props) {
       setId(selectedFieldTask.id);
       setDate(selectedFieldTask.date);             
       setDueDate(selectedFieldTask.duedate);          
-      setClassSelect(selectedFieldTask.classselect);
+      setYear(selectedFieldTask.year);
     }
   }, [selectedFieldTask]);                  
 
   const editIssue = () => {
     if (validateForm()) {
       props.onHide();
-      dispatch(updateTaskToServer({ id, subname, date,task, duedate, classselect }));
+      dispatch(updateTaskToServer({ id, subname, date,task, duedate, year }));
       window.location.reload();
     }
   };
@@ -67,7 +67,7 @@ function UpdateTaskModal(props) {
       isValid = false;
     }
 
-    if (!classselect.trim()) {
+    if (!year.trim()) {
       errors.classselect = 'Class is required';
       isValid = false;
     }
@@ -108,6 +108,18 @@ function UpdateTaskModal(props) {
             <Form.Control.Feedback type="invalid">{errors.subname}</Form.Control.Feedback>
           </Form.Group>
 
+
+          <Form.Group controlId="formSubname" style={{ marginBottom: '20px' }}>
+            <Form.Label>Class</Form.Label>
+            <Form.Select name="year" value={year} onChange={(e)=>setYear(e.target.value)}>
+        <option>Select</option>
+        <option>I</option>
+        <option>II</option>                       
+        <option>III</option>
+        <option>IV</option>
+    </Form.Select>
+            <Form.Control.Feedback type="invalid">{errors.subname}</Form.Control.Feedback>
+          </Form.Group>
 
           <Form.Group controlId="formSubname" style={{ marginBottom: '20px' }}>
             <Form.Label>Task</Form.Label>
