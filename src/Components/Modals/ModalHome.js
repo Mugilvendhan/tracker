@@ -11,7 +11,7 @@ function LoginFormWithModal() {
             <div className="modal-content">
               <div className="modal-header">
                 <h4 className="modal-title fw-bold">Login</h4>
-                <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
+               <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button> 
               </div>
               <div className="modal-body">
                 <LoginForm />

@@ -38,7 +38,7 @@ function UpdateTaskModal(props) {
     const errors = {};
     let isValid = true;
 
-    if (!date.trim()) {
+   /*  if (!date.trim()) {
       errors.date = 'Start Date is required';
       isValid = false;
     } else {
@@ -48,7 +48,7 @@ function UpdateTaskModal(props) {
         errors.date = 'Start Date cannot be in the past';
         isValid = false;
       }
-    }
+    } */
 
     if (!duedate.trim()) {
       errors.duedate = 'Due Date is required';
@@ -90,9 +90,9 @@ function UpdateTaskModal(props) {
               name="date"
               value={date}
               onChange={(e) => setDate(e.target.value)}
-              isInvalid={!!errors.date}
+          /*     isInvalid={!!errors.date} */
             />
-            <Form.Control.Feedback type="invalid">{errors.date}</Form.Control.Feedback>
+           {/*  <Form.Control.Feedback type="invalid">{errors.date}</Form.Control.Feedback> */}
           </Form.Group>
 
           <Form.Group controlId="formSubname" style={{ marginBottom: '20px' }}>

@@ -43,12 +43,6 @@ function AcademicReportForm() {
   }, [loggedInUserId]);
 
 
-
-
-
-
-
-
   const dispatch = useDispatch();
 
   const [formData, setFormData] = useState({
@@ -118,7 +112,7 @@ function AcademicReportForm() {
     const error = validateField(name, value);
 
     setFormData(prevData => ({
-      ...prevData,
+      ...prevData, 
       [name]: value,
     }));
 
@@ -303,7 +297,11 @@ function AcademicReportForm() {
                 </Row>
 
                 <div style={{ padding: '3rem' }}>
-                  <Button variant='dark' type="submit" style={{ backgroundColor: 'black', color: 'white' }} >Submit</Button>
+                  <Button 
+                  variant='dark' 
+                  type="submit" 
+                  style={{ backgroundColor: 'black', color: 'white' }} >Submit
+                  </Button>
                 </div>
                 </>
                         )}

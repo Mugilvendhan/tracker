@@ -29,7 +29,8 @@ With a focus on cutting-edge research and hands-on learning experiences, we prep
       
       
         </Row>
-</div></div>
+</div>
+</div>
 <div className="content-box1 mt-1 py-1">
   <div className="container py-4" >
         <Row className='justify-content-md-center my-5'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-bootstrap';
+import {  NavLink } from 'react-bootstrap';
 
 function Footer() {
   return (
@@ -22,8 +22,13 @@ function Footer() {
             <div className="contact text-right">
               <h2>Contact Us</h2>
               <div className="socials p-2 m-1">
+             
+  <NavLink href='#'>
   <i className="bi bi-linkedin mx-2"></i>
-  <i className="bi bi-instagram mx-0"></i> 
+ <i className="bi bi-instagram mx-2"></i>
+  </NavLink>
+
+
   <p className="mb-0 my-2">Contact : +0427 254712</p>
 </div>
 

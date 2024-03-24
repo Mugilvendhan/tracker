@@ -246,6 +246,45 @@
       "description": "The Grade published was an error. please look in to it.",
       "status": "In Review",
       "year": "III"
+    },
+    {
+      "id": "0eeb",
+      "date": "2024-03-20",
+      "email": "stud1008@gmail.com",
+      "name": "AVI",
+      "dept": "EEE",
+      "priority": "Medium",
+      "mobile": "6383711534",
+      "issueon": "Class room",
+      "description": "Faculty members raising concerns about classroom technology. Ensure functionality for teaching",
+      "status": "Pending",
+      "year": "I"
+    },
+    {
+      "id": "6e28",
+      "date": "2024-03-12",
+      "email": "stud1012@gmail.com",
+      "name": "JATIN",
+      "dept": "Civil",
+      "priority": "Medium",
+      "mobile": "8576484758",
+      "issueon": "Fees payment",
+      "description": "My tution fee is not mentioned clearly in my application. kindly please look into it. ",
+      "status": "Approved",
+      "year": "I"
+    },
+    {
+      "id": "b0e1",
+      "date": "2024-03-13",
+      "email": "stud1001@gmail.com",
+      "name": "KOWSHIKRAJ K",
+      "dept": "CSE",
+      "priority": "High",
+      "mobile": "6383711534",
+      "issueon": "Course material",
+      "description": "My Class students haven't received the text-book for the currnet semester (8th sem).",
+      "status": "Pending",
+      "year": "IV"
     }
   ],
   "issuesfaculty": [
@@ -367,7 +406,7 @@
       "mobile": "9383711534",
       "issueon": "others",
       "description": "Maintenance needed for campus landscaping. Ensure aesthetic appeal and safety",
-      "status": "Pending"
+      "status": "Approved"
     },
     {
       "id": "237a",
@@ -851,12 +890,12 @@
     {
       "id": "7a49",
       "task": "Develop a basic network communication application for data exchange",
-      "date": "2024-03-09",
+      "date": "2024-03-21",
       "subname": "Network App",
       "faculty": "ISHAAN",
-      "year": "IV",
+      "year": "II",
       "classselect": "CSE",
-      "duedate": "2024-04-04"
+      "duedate": "2024-03-24"
     },
     {
       "id": "c2d3",
@@ -950,13 +989,13 @@
     },
     {
       "id": "1097",
-      "task": "Enter the string kkkk",
+      "task": "Create a personal Application for telling about your descriptions.",
       "date": "2024-03-27",
-      "subname": "kmnj",
+      "subname": "Network App",
       "faculty": "ISHAAN",
       "year": "IV",
       "classselect": "CSE",
-      "duedate": "2024-03-30"
+      "duedate": "2024-03-28"
     },
     {
       "id": "0b28",
@@ -967,6 +1006,16 @@
       "year": "I",
       "classselect": "Mechanical",
       "duedate": "2024-03-23"
+    },
+    {
+      "id": "31ed",
+      "task": " Motor Control System Development",
+      "date": "2024-03-23",
+      "subname": "Control Systems ",
+      "faculty": "AADI",
+      "year": "I",
+      "classselect": "EEE",
+      "duedate": "2024-03-27"
     }
   ]
 }
