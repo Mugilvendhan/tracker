@@ -39,8 +39,8 @@ function Cardhold() {
 
   <Container fluid className='table-responsive'>
     <div className="content-box mt-5">
-      <Row xs={1} sm={2} md={3} className="justify-content-center">
-        {issueCardDetails.map((issue, index) => (
+      <Row xs={1} sm={2} md={3} className="justify-content-center">                                    {/* one column per row on extra small */}
+        {issueCardDetails.map((issue, index) => (                                                  /* no fetching is doen , only the data in an array is passed only by one with help of .map()  */
           <Col key={index} className="mb-3">
             <IssueCart cateimg={issue.img} category={issue.category} cardtext={issue.cardText} btnname="Raise Issue" route={issue.route} />
           </Col>

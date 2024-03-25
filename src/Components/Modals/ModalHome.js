@@ -1,4 +1,36 @@
-import LoginForm from "./LoginForm";
+/* import React, { useState } from 'react';
+import { Modal, Button } from 'react-bootstrap';
+import LoginForm from './LoginForm'; // Import your LoginForm component
+
+function LoginFormWithModal() {
+    const [showModal, setShowModal] = useState(false);
+
+    return (
+        <div>
+            <Button
+                className="btn"
+                style={{ backgroundColor: 'rgb(243, 232, 232)', color: 'rgb(17, 16, 16)' }}
+                onClick={() => setShowModal(true)}
+            >
+                Login
+          </Button>
+
+            <Modal show={showModal} onHide={() => setShowModal(false)}>
+                <Modal.Header closeButton>
+                    <Modal.Title className="fw-bold">Login</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <LoginForm />
+                </Modal.Body>
+            </Modal>
+        </div>
+    );
+}
+
+export default LoginFormWithModal;
+ */
+
+/* import LoginForm from "./LoginForm";
 import React, { useState } from 'react';
 function LoginFormWithModal() {
     const [showModal, setShowModal] = useState(false);
@@ -23,4 +55,4 @@ function LoginFormWithModal() {
     );
   }
   
-  export default LoginFormWithModal;
+  export default LoginFormWithModal; */

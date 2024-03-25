@@ -285,6 +285,45 @@
       "description": "My Class students haven't received the text-book for the currnet semester (8th sem).",
       "status": "Pending",
       "year": "IV"
+    },
+    {
+      "id": "f9a5",
+      "date": "2024-03-23",
+      "email": "stud1005@gmail.com",
+      "name": "BHAVIN KUMAR",
+      "dept": "Mechanical",
+      "priority": "Low",
+      "mobile": "9993711534",
+      "issueon": "Class room",
+      "description": "Faculty members raising concerns about classroom technology. Ensure functionality for teaching",
+      "status": "Pending",
+      "year": "II"
+    },
+    {
+      "id": "2fd9",
+      "date": "2024-03-19",
+      "email": "stud1018@gmail.com",
+      "name": "IKSHITHA",
+      "dept": "ECE",
+      "priority": "Medium",
+      "mobile": "8383711534",
+      "issueon": "Fees payment",
+      "description": "My last semester Tuition fees details still not yet updated.",
+      "status": "Declined",
+      "year": "IV"
+    },
+    {
+      "id": "6a58",
+      "date": "2024-03-20",
+      "email": "stud1018@gmail.com",
+      "name": "IKSHITHA",
+      "dept": "ECE",
+      "priority": "Medium",
+      "mobile": "6381180091",
+      "issueon": "Grade",
+      "description": "Faculty members raising concerns about classroom technology. Ensure functionality for teaching",
+      "status": "Pending",
+      "year": "IV"
     }
   ],
   "issuesfaculty": [
@@ -868,154 +907,354 @@
   ],
   "assigntask": [
     {
-      "id": "1f7c",
-      "task": "Create a personal website using HTML, CSS, and JavaScript.",
-      "date": "2024-02-24",
-      "subname": "Web Development ",
-      "faculty": "ISHAAN",
-      "year": "IV",
-      "classselect": "CSE",
-      "duedate": "2024-03-08"
-    },
-    {
-      "id": "c182",
-      "task": "Implement and compare sorting algorithms for efficiency",
-      "date": "2024-03-09",
-      "subname": "Sorting Algorithm",
-      "faculty": "ISHAAN",
-      "year": "IV",
-      "classselect": "CSE",
-      "duedate": "2024-03-16"
-    },
-    {
-      "id": "7a49",
-      "task": "Develop a basic network communication application for data exchange",
-      "date": "2024-03-21",
-      "subname": "Network App",
-      "faculty": "ISHAAN",
-      "year": "II",
-      "classselect": "CSE",
-      "duedate": "2024-03-24"
-    },
-    {
-      "id": "c2d3",
-      "task": "Circuit Design Project",
-      "date": "2024-03-03",
-      "subname": "Analog Circuits",
-      "faculty": "AADI",
-      "year": "III",
-      "classselect": "EEE",
-      "duedate": "2024-03-10"
-    },
-    {
-      "id": "c007",
-      "task": "Motor Control System Development",
-      "date": "2024-03-01",
-      "subname": "Control Systems",
-      "faculty": "AADI",
-      "year": "III",
-      "classselect": "EEE",
-      "duedate": "2024-03-14"
-    },
-    {
-      "id": "cb4a",
+      "id": "36b7",
       "task": "Project on Embedded Systems",
-      "date": "2024-03-03",
+      "date": "2024-03-28",
       "subname": "Embedded Systems",
-      "faculty": "AHANA",
+      "faculty": "faculty003@gmail.com",
       "year": "II",
       "classselect": "ECE",
-      "duedate": "2024-03-09"
+      "duedate": "2024-03-30"
     },
     {
-      "id": "f625",
+      "id": "8a0b",
       "task": "Analysis of Communication Networks",
-      "date": "2024-03-02",
-      "subname": "Communication Systems",
-      "faculty": "AHANA",
-      "year": "II",
+      "date": "2024-04-04",
+      "subname": "Networks",
+      "faculty": "faculty003@gmail.com",
+      "year": "III",
       "classselect": "ECE",
-      "duedate": "2024-03-09"
+      "duedate": "2024-04-06"
     },
     {
-      "id": "b9e5",
-      "task": "Design of Reinforced Concrete Structures",
-      "date": "2024-02-25",
-      "subname": "Structural Analysis and Design",
-      "faculty": "ADVIKA",
+      "id": "237d",
+      "task": "Develop a network communication application",
+      "date": "2024-03-29",
+      "subname": "Analog Circuits",
+      "faculty": "faculty003@gmail.com",
       "year": "IV",
-      "classselect": "Civil",
-      "duedate": "2024-03-01"
+      "classselect": "ECE",
+      "duedate": "2024-04-02"
     },
     {
-      "id": "7ebd",
-      "task": "Surveying and Land Measurement",
-      "date": "2024-03-08",
-      "subname": " Surveying",
-      "faculty": "ADVIKA",
-      "year": "IV",
-      "classselect": "Civil",
-      "duedate": "2024-03-10"
+      "id": "19bd",
+      "task": "Database Management System Project",
+      "date": "2024-03-28",
+      "subname": "Database Management",
+      "faculty": "faculty001@gmail.com",
+      "year": "I",
+      "classselect": "CSE",
+      "duedate": "2024-03-30"
     },
     {
-      "id": "bf76",
-      "task": "Design and Fabrication of a Prototype Machine",
-      "date": "2024-03-02",
-      "subname": "Machine Design",
-      "faculty": "ISHITHA",
-      "year": "II",
-      "classselect": "Mechanical",
-      "duedate": "2024-03-03"
+      "id": "3a02",
+      "task": "Software Development Assignment",
+      "date": "2024-04-04",
+      "subname": "Software Engineering",
+      "faculty": "faculty001@gmail.com",
+      "year": "III",
+      "classselect": "CSE",
+      "duedate": "2024-04-05"
     },
     {
-      "id": "4b02",
-      "task": "Thermodynamic Analysis of Heat Engines",
-      "date": "2024-03-03",
-      "subname": "Thermodynamics",
-      "faculty": "ISHITHA",
-      "year": "II",
-      "classselect": "Mechanical",
-      "duedate": "2024-03-09"
-    },
-    {
-      "id": "0519",
-      "task": "Renewable Energy Integration Study",
-      "date": "2024-02-25",
-      "subname": " Renewable Energy Systems",
-      "faculty": "AADI",
-      "year": "II",
-      "classselect": "EEE",
-      "duedate": "2024-02-29"
-    },
-    {
-      "id": "1097",
-      "task": "Create a personal Application for telling about your descriptions.",
+      "id": "86b1",
+      "task": " Network Security Lab",
       "date": "2024-03-27",
-      "subname": "Network App",
-      "faculty": "ISHAAN",
-      "year": "IV",
+      "subname": "Network Security",
+      "faculty": "faculty001@gmail.com",
+      "year": "II",
       "classselect": "CSE",
       "duedate": "2024-03-28"
     },
     {
-      "id": "0b28",
-      "task": "Design the of a Prototype Machine",
-      "date": "2024-03-20",
-      "subname": "Machine Design",
-      "faculty": "ISHITHA",
-      "year": "I",
-      "classselect": "Mechanical",
-      "duedate": "2024-03-23"
+      "id": "9312",
+      "task": "Artificial Intelligence Simulation",
+      "date": "2024-03-27",
+      "subname": "Artificial Intelligence",
+      "faculty": "faculty001@gmail.com",
+      "year": "IV",
+      "classselect": "CSE",
+      "duedate": "2024-03-31"
     },
     {
-      "id": "31ed",
-      "task": " Motor Control System Development",
-      "date": "2024-03-23",
-      "subname": "Control Systems ",
-      "faculty": "AADI",
+      "id": "42fd",
+      "task": "Web Development Challenge",
+      "date": "2024-03-27",
+      "subname": "Web Technologies",
+      "faculty": "faculty001@gmail.com",
+      "year": "IV",
+      "classselect": "CSE",
+      "duedate": "2024-03-29"
+    },
+    {
+      "id": "a0c5",
+      "task": "Software Development Assignment",
+      "date": "2024-03-30",
+      "subname": "Software Engineering",
+      "faculty": "faculty001@gmail.com",
+      "year": "II",
+      "classselect": "CSE",
+      "duedate": "2024-04-03"
+    },
+    {
+      "id": "f7d5",
+      "task": "Web Development Challenge",
+      "date": "2024-03-28",
+      "subname": "Web Technologies",
+      "faculty": "faculty001@gmail.com",
+      "year": "II",
+      "classselect": "CSE",
+      "duedate": "2024-04-05"
+    },
+    {
+      "id": "af9b",
+      "task": "Power System Analysis Report",
+      "date": "2024-03-27",
+      "subname": "Power Systems",
+      "faculty": "faculty002@gmail.com",
       "year": "I",
       "classselect": "EEE",
-      "duedate": "2024-03-27"
+      "duedate": "2024-03-28"
+    },
+    {
+      "id": "affe",
+      "task": " Control System Design Project",
+      "date": "2024-03-27",
+      "subname": "Control Systems",
+      "faculty": "faculty002@gmail.com",
+      "year": "II",
+      "classselect": "EEE",
+      "duedate": "2024-03-30"
+    },
+    {
+      "id": "a285",
+      "task": " Digital Signal Processing Assignment",
+      "date": "2024-03-29",
+      "subname": "Digital Signal Processing",
+      "faculty": "faculty002@gmail.com",
+      "year": "III",
+      "classselect": "EEE",
+      "duedate": "2024-04-05"
+    },
+    {
+      "id": "cc61",
+      "task": " Renewable Energy Simulation",
+      "date": "2024-04-04",
+      "subname": "Renewable Energy Systems",
+      "faculty": "faculty002@gmail.com",
+      "year": "IV",
+      "classselect": "EEE",
+      "duedate": "2024-04-05"
+    },
+    {
+      "id": "3af5",
+      "task": " Electrical Machine Lab Experiment",
+      "date": "2024-03-28",
+      "subname": "Electrical Machines",
+      "faculty": "faculty002@gmail.com",
+      "year": "II",
+      "classselect": "EEE",
+      "duedate": "2024-03-30"
+    },
+    {
+      "id": "45a5",
+      "task": "Electrical Machine Lab Experiment",
+      "date": "2024-04-03",
+      "subname": "Electrical Machines",
+      "faculty": "faculty002@gmail.com",
+      "year": "III",
+      "classselect": "EEE",
+      "duedate": "2024-04-05"
+    },
+    {
+      "id": "8365",
+      "task": "Electrical Machine Lab Experiment",
+      "date": "2024-04-06",
+      "subname": "Electrical Machines",
+      "faculty": "faculty002@gmail.com",
+      "year": "IV",
+      "classselect": "EEE",
+      "duedate": "2024-04-07"
+    },
+    {
+      "id": "cd7e",
+      "task": "Embedded System Development",
+      "date": "2024-03-29",
+      "subname": "Embedded Systems",
+      "faculty": "faculty003@gmail.com",
+      "year": "I",
+      "classselect": "ECE",
+      "duedate": "2024-04-03"
+    },
+    {
+      "id": "d323",
+      "task": "VLSI Circuit Design Project",
+      "date": "2024-03-29",
+      "subname": "VLSI Design",
+      "faculty": "faculty003@gmail.com",
+      "year": "II",
+      "classselect": "ECE",
+      "duedate": "2024-04-03"
+    },
+    {
+      "id": "50eb",
+      "task": "Microwave Engineering Assignment",
+      "date": "2024-03-28",
+      "subname": "Microwave Engineering",
+      "faculty": "faculty003@gmail.com",
+      "year": "III",
+      "classselect": "ECE",
+      "duedate": "2024-03-29"
+    },
+    {
+      "id": "6cc5",
+      "task": "Digital Image Processing Lab",
+      "date": "2024-04-05",
+      "subname": "Digital Image Processing",
+      "faculty": "faculty003@gmail.com",
+      "year": "IV",
+      "classselect": "ECE",
+      "duedate": "2024-04-07"
+    },
+    {
+      "id": "f17e",
+      "task": "Structural Analysis Project",
+      "date": "2024-03-28",
+      "subname": "Structural Analysis",
+      "faculty": "faculty004@gmai.com",
+      "year": "I",
+      "classselect": "Civil",
+      "duedate": "2024-04-05"
+    },
+    {
+      "id": "97c1",
+      "task": " Geotechnical Engineering Report",
+      "date": "2024-03-28",
+      "subname": "Geotechnical Engineering",
+      "faculty": "faculty004@gmai.com",
+      "year": "II",
+      "classselect": "Civil",
+      "duedate": "2024-04-06"
+    },
+    {
+      "id": "7b3a",
+      "task": "Transportation Planning Assignment",
+      "date": "2024-04-04",
+      "subname": "Transportation Engineering",
+      "faculty": "faculty004@gmai.com",
+      "year": "III",
+      "classselect": "Civil",
+      "duedate": "2024-04-05"
+    },
+    {
+      "id": "2d94",
+      "task": " Environmental Engineering Experiment",
+      "date": "2024-03-28",
+      "subname": "Environmental Engineering",
+      "faculty": "faculty004@gmai.com",
+      "year": "IV",
+      "classselect": "Civil",
+      "duedate": "2024-03-30"
+    },
+    {
+      "id": "22b0",
+      "task": "Transportation Planning Assignment",
+      "date": "2024-03-28",
+      "subname": "Transportation Engineering",
+      "faculty": "faculty004@gmai.com",
+      "year": "II",
+      "classselect": "Civil",
+      "duedate": "2024-03-30"
+    },
+    {
+      "id": "d06a",
+      "task": "Structural Analysis Project",
+      "date": "2024-03-28",
+      "subname": "Structural Analysis and Design",
+      "faculty": "faculty004@gmai.com",
+      "year": "III",
+      "classselect": "Civil",
+      "duedate": "2024-03-29"
+    },
+    {
+      "id": "9d1b",
+      "task": "Construction Management Case Study",
+      "date": "2024-03-29",
+      "subname": "Construction Management",
+      "faculty": "faculty004@gmai.com",
+      "year": "IV",
+      "classselect": "Civil",
+      "duedate": "2024-03-31"
+    },
+    {
+      "id": "c17c",
+      "task": "Finite Element Analysis Project",
+      "date": "2024-03-28",
+      "subname": "Finite Element Analysis",
+      "faculty": "faculty005@gmail.com",
+      "year": "I",
+      "classselect": "Mechanical",
+      "duedate": "2024-03-30"
+    },
+    {
+      "id": "b9a5",
+      "task": "Thermal Engineering Report",
+      "date": "2024-03-27",
+      "subname": "Thermal Engineering",
+      "faculty": "faculty005@gmail.com",
+      "year": "II",
+      "classselect": "Mechanical",
+      "duedate": "2024-03-29"
+    },
+    {
+      "id": "963c",
+      "task": "Machine Design Assignment",
+      "date": "2024-03-28",
+      "subname": "Machine Design",
+      "faculty": "faculty005@gmail.com",
+      "year": "III",
+      "classselect": "Mechanical",
+      "duedate": "2024-03-30"
+    },
+    {
+      "id": "695a",
+      "task": "Fluid Mechanics Experiment",
+      "date": "2024-03-28",
+      "subname": "Fluid Mechanics",
+      "faculty": "faculty005@gmail.com",
+      "year": "IV",
+      "classselect": "Mechanical",
+      "duedate": "2024-03-29"
+    },
+    {
+      "id": "2743",
+      "task": "Manufacturing Process Simulation",
+      "date": "2024-03-27",
+      "subname": "Manufacturing Processes",
+      "faculty": "faculty005@gmail.com",
+      "year": "II",
+      "classselect": "Mechanical",
+      "duedate": "2024-03-28"
+    },
+    {
+      "id": "8a0a",
+      "task": "Fluid Mechanics Experiment",
+      "date": "2024-04-11",
+      "subname": "Fluid Mechanics",
+      "faculty": "faculty005@gmail.com",
+      "year": "III",
+      "classselect": "Mechanical",
+      "duedate": "2024-04-13"
+    },
+    {
+      "id": "c00a",
+      "task": "Thermal Engineering Report",
+      "date": "2024-03-28",
+      "subname": "Thermodynamics",
+      "faculty": "faculty005@gmail.com",
+      "year": "IV",
+      "classselect": "Mechanical",
+      "duedate": "2024-03-29"
     }
   ]
 }

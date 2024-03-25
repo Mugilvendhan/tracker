@@ -9,8 +9,6 @@ const LoginForm = () => {
 
   const [showPassword, setShowPassword] = useState(false);
 
-
-
   const togglePasswordVisibility = () => {
     setShowPassword(prevState => !prevState);     //if true make it false viseverse 
   };
@@ -49,7 +47,7 @@ const LoginForm = () => {
   const validatePassword = () => {
     const password = formData.password.trim();
     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%?&])[A-Za-z\d@$!%*?&]{8,}$/;   // ensuring it has at least one alphabet, one number, one special character, and is at least 8 characters long.
-                                                                                            //It's a non-capturing group because it uses (?= ... )   It allows you to apply special operations or assertions to a part of the regular expression without including it in the final match result.
+                                                                                           //It's a non-capturing group because it uses (?= ... )   It allows you to apply special operations or assertions to a part of the regular expression without including it in the final match result.
     if (passwordRegex.test(password)) {
       hideError('password');
       return true;
@@ -79,7 +77,7 @@ const LoginForm = () => {
    // useState is a React Hook that allows functional components to manage state. it lets to add state to functional components.
   const [loggedInUserId, setLoggedInUserId] = useState(null);   //curremt value - loggedIn Id , function to update value - setLoggedInId
 
-  useEffect(() => {                                              // useEffect - that allows functional components to perform side effects
+  useEffect(() => {                                               // useEffect - that allows functional components to perform side effects
     // Fetch credentials from JSON server                        //This function will be executed after every render of the component.
     fetch('http://localhost:5000/studentprofile')                //The fetch function is used to make an HTTP request to the specified URL to fetch data.
       .then(response => response.json())

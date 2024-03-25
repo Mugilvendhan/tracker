@@ -6,17 +6,17 @@ import LogoutModal from '../../Components/Modals/LogoutModal';
 function Studentnav() {
 
   const [userData, setUserData] = useState(null);
-  const [loggedInUserId, setLoggedInUserId] = useState(null);
-  useEffect(() => {
+  const [loggedInUserId, setLoggedInUserId] = useState(null);                                     // to maintain the state
+  useEffect(() => {                                                                               //fetch data
     // Retrieve loggedInUserId from local storage when the component mounts
-    const loggedInUserIdFromLocalStorage = localStorage.getItem('loggedInUserId');
+    const loggedInUserIdFromLocalStorage = localStorage.getItem('loggedInUserId');                //2action set , get.
     if (loggedInUserIdFromLocalStorage) {
       setLoggedInUserId(loggedInUserIdFromLocalStorage);
     }
   }, []);
      
 
-  useEffect(() => {
+  useEffect(() => {                                                                                      //The useEffect hook sets up an action to be performed after every render.
     // Check if loggedInUserId is truthy before making the API request
     if (loggedInUserId) {
       // Make the API request using loggedInUserId
@@ -27,16 +27,16 @@ function Studentnav() {
           }
           return response.json();
         })
-        .then(data => {
-          // Handle the fetched data as needed
-          setUserData(data);
+        .then(data => {                                                                   // .then- promise api call, data as parameter  
+          // Handle the fetched data as needed  
+          setUserData(data);                                                             //fetched data is updated to setUserData, with help of useState hook userData is updated
           console.log(data);
         })
         .catch(error => {
           console.error('Error fetching user details:', error);
         });
     }
-  }, [loggedInUserId]);
+  }, [loggedInUserId]);                                                                  //The second argument, [loggedInUserId], lists the variables this action depends on. If any of these variables change, the action will run again.
 
 
 
@@ -49,7 +49,7 @@ function Studentnav() {
   return (
     <>
       <Navbar expand="lg" bg="dark" variant="dark" fixed="top">
-      {userData && (
+      {userData && (                                                                                                                  // conditional renedering , if userData exsit, it displays name .. if true it move to code inside bracket else wont move.
         <Navbar.Brand as={Link} to="#" className="pe-4 px-4">College Issue Tracker <span> Hello, {userData.name}</span></Navbar.Brand>
       )}
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -65,19 +65,6 @@ function Studentnav() {
       </Navbar>
     
       <LogoutModal show={showModal} onHide={() => setShowModal(false)}/>
-
-      {/* <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Logout</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>Are you sure you want to logout?</p>
-        </Modal.Body>
-        <Modal.Footer> 
-          <Button variant="dark" onClick={handleCloseModal}>No</Button>
-          <Button as={Link} to="/" variant="dark">Yes</Button>
-        </Modal.Footer>
-      </Modal> */}
     </>
   );
 }

@@ -7,16 +7,12 @@ import { getTaskFromServer } from '../../../../slices/AddTaskSlice';
 
 function TaskTable() {
 
-
-
-  
-
   const [userData, setUserData] = useState(null);
   const [loggedYear, setLoggedYear] = useState(null);
   const [loggedDept, setLoggedDept] = useState(null);
   useEffect(() => {
     // Retrieve loggedInUserId from local storage when the component mounts
-    const loggedInYearFromLocalStorage = localStorage.getItem('loggedYear');
+    const loggedInYearFromLocalStorage = localStorage.getItem('loggedYear');                                           //yr and dept is retrived from url and checked , if both are same as the request then the data displayed in table will be only those state.
     const loggedInDeptFromLocalStorage = localStorage.getItem('loggedDept');
     console.log('loggedInYearFromLocalStorage:', loggedInYearFromLocalStorage);
     console.log('loggedInDeptFromLocalStorage:', loggedInDeptFromLocalStorage);
@@ -51,34 +47,22 @@ function TaskTable() {
     }
   }, [loggedYear, loggedDept]);
   
-          
-
-
-
-
-
-
-
-
-
-
-
 
     // const {taskAssign} = useSelector((state)=>state.assigntask)
 
      const dispatch=useDispatch();
 
      useEffect(()=>{
-      dispatch(getTaskFromServer());
+      dispatch(getTaskFromServer());                                               //action to perform in redux store.
      },[dispatch]
      )
     const handleDownload = () => {
-      const downloadLink = document.createElement('a');
-      downloadLink.href = Task1PDF; // Use the imported PDF file
-      downloadLink.download = 'Task1.pdf'; // Name of the downloaded file
-      document.body.appendChild(downloadLink);
-      downloadLink.click();
-      document.body.removeChild(downloadLink);
+      const downloadLink = document.createElement('a');                                         // <a> tag initiated
+      downloadLink.href = Task1PDF; // Use the imported PDF file                                  the link is set to download
+      downloadLink.download = 'Task1.pdf'; // Name of the downloaded file                            the download process by simulating a click event on the link
+      document.body.appendChild(downloadLink);                                          
+      downloadLink.click();                                                                      //event is triggered
+      document.body.removeChild(downloadLink);                                            // then removes the link from the document to clean up after the download is initiated. 
     };
 
   return (

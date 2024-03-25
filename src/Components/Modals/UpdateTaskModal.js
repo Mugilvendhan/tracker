@@ -89,10 +89,8 @@ function UpdateTaskModal(props) {
               type="date"
               name="date"
               value={date}
-              onChange={(e) => setDate(e.target.value)}
-          /*     isInvalid={!!errors.date} */
+              onChange={(e) => setDate(e.target.value)}        
             />
-           {/*  <Form.Control.Feedback type="invalid">{errors.date}</Form.Control.Feedback> */}
           </Form.Group>
 
           <Form.Group controlId="formSubname" style={{ marginBottom: '20px' }}>
@@ -133,21 +131,6 @@ function UpdateTaskModal(props) {
             />
             <Form.Control.Feedback type="invalid">{errors.task}</Form.Control.Feedback>
           </Form.Group>
-{/* 
-          <Form.Group controlId="formclass" style={{ marginBottom: '20px' }}>
-            <Form.Label>Class</Form.Label>
-            <Form.Select
-              value={classselect}
-              onChange={(e) => setClassSelect(e.target.value)}
-              isInvalid={!!errors.classselect} >
-              <option value="">Select Class</option>
-              <option value="IV-CSE">IV-CSE</option>
-              <option value="IV-EEE">IV-EEE</option>
-              <option value="IV-ECE">IV-ECE</option>
-              <option value="IV-IT">IV-IT</option>
-            </Form.Select>
-            <Form.Control.Feedback type="invalid">{errors.classselect}</Form.Control.Feedback>
-          </Form.Group> */}
 
           <Form.Group controlId="formdue" style={{ marginBottom: '20px' }}>
             <Form.Label>Due Date</Form.Label>

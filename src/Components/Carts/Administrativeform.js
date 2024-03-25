@@ -6,10 +6,6 @@ import { addIssueToServer } from '../../slices/IssueSlice';
 
 function AdminReportForm() {
  
-
-
-
-
   const [userData, setUserData] = useState(null);
   const [loggedInUserId, setLoggedInUserId] = useState(null);
   useEffect(() => {
@@ -43,25 +39,6 @@ function AdminReportForm() {
     }
   }, [loggedInUserId]);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   const dispatch = useDispatch();
 
   const [formData, setFormData] = useState({
@@ -85,15 +62,6 @@ function AdminReportForm() {
     let error = '';
 
     switch (fieldName) {
-    /*   case 'name':
-        error = value.trim() === '' ? 'First Name is required' : '';
-        break; */
-     /*  case 'email':
-        error = value.trim() === '' ? 'Email Address is required' : !/\S+@\S+\.\S+/.test(value) ? 'Invalid email address' : '';
-        break; */
-     /*  case 'dept':
-        error = value === 'Select' ? 'Department is required' : '';
-        break; */
       case 'location':
         error = value === 'Select' ? 'Issue facing on is required' : '';
         break;
@@ -117,7 +85,7 @@ function AdminReportForm() {
           break;
         
       case 'mobile':
-        error = value.trim() === '' ? 'Mobile Number is required' : !/^[6789]\d{9}$/.test(value) ? 'Invalid mobile number' : '';
+        error = value.trim() === '' ? 'Mobile Number is required' : !/^[6789]\d{9}$/.test(value) ? 'Invalid mobile number' : '';                 /* .test() -used to search for a match between a regular expression pattern and a specified string. */
         break;
       default:
         break;

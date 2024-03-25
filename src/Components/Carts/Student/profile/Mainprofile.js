@@ -19,7 +19,7 @@ function StudentProfile() {
     // Check if loggedInUserId is truthy before making the API request
     if (loggedInUserId) {
       // Make the API request using loggedInUserId
-      fetch(`http://localhost:5000/studentprofile/${loggedInUserId}`)
+      fetch(`http://localhost:5000/studentprofile/${loggedInUserId}`)                    /* dynamically get while fetching - the currently logged-in user's ID. */
         .then(response => {
           if (!response.ok) {
             throw new Error('Failed to fetch user details');
@@ -62,10 +62,6 @@ function StudentProfile() {
           <div className="col-md- mb-5">
             <StudentBasicInfo />
           </div>
-        
-         {/*  <div className="col-md-12 mb-5">
-            <StudentIssueStatus />
-          </div> */}
         </div>
       </div>
     </div>

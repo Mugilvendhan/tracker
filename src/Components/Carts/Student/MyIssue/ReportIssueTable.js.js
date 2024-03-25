@@ -8,16 +8,11 @@ function ReportTable() {
   
 
   const [userData, setUserData] = useState(null);
-  const [loggedName, setLoggedName] = useState(null);
+  //const [loggedName, setLoggedName] = useState(null);
   const [loggedEmail, setLoggedEmail] = useState(null);
   useEffect(() => {
     // Retrieve loggedInUserId from local storage when the component mounts
-    const loggedInNameFromLocalStorage = localStorage.getItem('loggedName');
     const loggedInEmailFromLocalStorage = localStorage.getItem('loggedEmail');
-    if (loggedInNameFromLocalStorage) {
-      setLoggedName(loggedInNameFromLocalStorage);
-      
-    }
     if (loggedInEmailFromLocalStorage) {
       setLoggedEmail(loggedInEmailFromLocalStorage);
       
@@ -28,7 +23,7 @@ function ReportTable() {
     console.log(loggedEmail)
     if (loggedEmail) {
       // Make the API request using loggedEmail
-      fetch(`http://localhost:5000/issues?email=${loggedEmail}`)
+      fetch(`http://localhost:5000/issues?email=${loggedEmail}`)                            //the URL is known as the query string.  pass additional parameters to the server. retrieving a list of issues associated with the user's email address.
         .then(response => {
           if (!response.ok) {
             throw new Error('Failed to fetch user details');
@@ -50,9 +45,9 @@ function ReportTable() {
 
  /*  const { issuesList } = useSelector((state) => state.issues); */
   const dispatch=useDispatch();
-  useEffect(() => {
+  useEffect(() => {                                                               //sideeffects - fetching data, subscribing to external services, or manually changing the DOM, 
     dispatch(getIssuesFromServer());                    
-  }, [dispatch]);
+  }, [dispatch]);                                                                // The effect will re-run if any of the dependencies change
   return (
     <Container fluid className='table-responsive'>
       <Table striped bordered hover>
@@ -69,20 +64,9 @@ function ReportTable() {
       </thead>
       <tbody>
 
-    {/*   {issuesList && issuesList.map((issue, index) => (
-              <tr key={issue.id}>
-                <td>{index + 1}</td>
-                <td>{issue.date}</td>
-                <td>{issue.issueon}</td>
-                <td>{issue.description}</td>
-                <td>{issue.priority}</td>
-                <td><b>{issue.status}</b></td>
-                
-        </tr>
-          ))} */}
 
-{userData && userData.map((issue, index) => (
-           <tr key={issue.id}>
+{userData && userData.map((issue, index) => (                                       //.map()-the code iterates over each element in the userData array using the .map() function
+           <tr key={issue.id}>                                                     {/* key -  is used to uniquely identify elements in a list.  */}
            <td>{index + 1}</td>
            <td>{issue.date}</td>
            <td>{issue.issueon}</td>

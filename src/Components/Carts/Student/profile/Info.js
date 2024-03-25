@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 
-
-
-
 function StudentBasicInfo() {
+
+
   const [userData, setUserData] = useState(null);
   const [loggedInUserId, setLoggedInUserId] = useState(null);
-  useEffect(() => {
-    // Retrieve loggedInUserId from local storage when the component mounts
-    const loggedInUserIdFromLocalStorage = localStorage.getItem('loggedInUserId');
+  useEffect(() => {                                                                               // Retrieve loggedInUserId from local storage when the component mounts
+ const loggedInUserIdFromLocalStorage = localStorage.getItem('loggedInUserId');
     if (loggedInUserIdFromLocalStorage) {
       setLoggedInUserId(loggedInUserIdFromLocalStorage);
     }
   }, []);
-
 
   useEffect(() => {
     // Check if loggedInUserId is truthy before making the API request
@@ -40,9 +37,9 @@ function StudentBasicInfo() {
           
 
   return (
-    <Container className='table-responsive'>
+    <Container className='table-responsive'>                                                             {/* conditional rendering */}
       {userData && (
-      <div className="card-body" style={{border:'1px solid black', borderRadius:'5px' , backgroundColor:'white' ,textAlign: 'left' , padding: '1rem'}}>
+      <div className="card-body" style={{border:'1px solid black', borderRadius:'5px' , backgroundColor:'white' ,textAlign: 'left' , padding: '1rem'}}>                        {/* inline css */}
       <div className="row">
         <div className="col-sm-3">
           <p className="mb-0">Full Name</p>
@@ -98,14 +95,6 @@ function StudentBasicInfo() {
       </div>
     </div>)}
     <div>
-    {/* {userData && (
-        <div>
-          <h1>User Profile</h1>
-          <p>Name: {userData.name}</p>
-          <p>Email: {userData.email}</p>
-         
-        </div>
-      )} */}
     </div>
     </Container>
   );

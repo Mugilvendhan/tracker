@@ -91,8 +91,8 @@ function FTaskForm() {
               error = 'Start Date cannot be in the past';
             }
           }
-          if (!error && formData.dueDate.trim() && new Date(formData.dueDate) < new Date(value)) {
-            error = 'Start Date cannot be after Due Date';
+          if (!error && formData.dueDate.trim() && new Date(formData.dueDate) < new Date(value)) {           // error = false , then -> .trim() has value , then -> checks if due < value entered 
+            error = 'Start Date cannot be after Due Date';                                                   //converted to a 'Date' object using new Date(formData.dueDate)
           }
           break;
         case 'dueDate':
@@ -134,7 +134,7 @@ function FTaskForm() {
 
     setErrors(newErrors);
 
-    const isValid = Object.values(newErrors).every(error => error === '');
+    const isValid = Object.values(newErrors).every(error => error === '');                                   //'foreach' field 'every' error is checked
 
     if (isValid) {
       console.log('Form submitted successfully');
@@ -143,7 +143,7 @@ function FTaskForm() {
                 task:formData.task,
                 date: formData.startDate,
                 subname: formData.subject,
-                faculty:userData.name,
+                faculty:userData.email,
                 year:formData.year,
                 classselect: userData.classdept,
                 duedate: formData.dueDate,
@@ -160,7 +160,7 @@ function FTaskForm() {
         dueDate: '',
       });
 
-      window.location.reload();
+      window.location.reload();                                                                       // to reload the page 
     } else {
       console.log('Form validation failed');
     }
@@ -169,7 +169,7 @@ function FTaskForm() {
   return (
     <>
 <Form onSubmit={handleSubmit}>
-         <Row className="g-3 mb-4">
+         <Row className="g-3 mb-4">                                            {/* gap -Bootstrap spacing class that adds a margin of 0.75rem (or 12px) between columns within the row */}
            <Col md={6}>
              <Form.Group controlId="task">
                <Form.Label>Enter a task <span style={{ color: 'red' }}>*</span></Form.Label>
@@ -200,12 +200,12 @@ function FTaskForm() {
           </Col>
           <Col md={6}>
             <Form.Group controlId="faculty">
-              <Form.Label>Faculty Name <span style={{ color: 'red' }}>*</span></Form.Label>
+              <Form.Label>Email ID <span style={{ color: 'red' }}>*</span></Form.Label>
               <Form.Control
                 type="text"
                 name="faculty"
-                placeholder="Enter faculty Name"
-                value={userData && userData.name}
+                placeholder="Enter faculty Email"
+                value={userData && userData.email}
                 onChange={handleChange}
                 /* isInvalid={!!errors.faculty} */
               />

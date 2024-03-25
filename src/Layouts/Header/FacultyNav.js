@@ -71,17 +71,6 @@ function Facultynav() {
       </Navbar>
 
       <LogoutModal show={showModal} onHide={() => setShowModal(false)}/>
-        {/* <Modal.Header closeButton>
-          <Modal.Title>Logout</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>Are you sure want to logout?</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant='dark' onClick={handleCloseModal}>No</Button>
-          <Button variant='dark' as={Link} to='/'>Yes</Button>
-        </Modal.Footer>
-      </Modal> */}
     </>
   );
 }

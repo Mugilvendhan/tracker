@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { Nav, Navbar, Button, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import LogoutModal from '../../Components/Modals/LogoutModal';
 
@@ -65,12 +65,6 @@ function AdminNav() {
             <Nav className="ms-auto">
             <Nav.Link as={Link} to="/admindashboard" className="text-white pe-3">Dashboard</Nav.Link>
               <Nav.Link as={Link} to="/adduserstudent" className="text-white pe-3">User Management</Nav.Link>
-              
-             {/*  <NavDropdown title="Add Users" id="basic-nav-dropdown" style={{color:'white', }}>
-              <NavDropdown.Item variant='dark' as={Link} to='/adduserstudent'>Student</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/staffcomplaintfaculty'>Faculty</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/staffcomplaintfaculty'>Staff</NavDropdown.Item>
-              </NavDropdown> */}
               <Nav.Link as={Link} to="/adminprofile" className="text-white pe-3">Profile</Nav.Link>
               
             </Nav>

@@ -12,21 +12,21 @@ function FTaskTable() {
 
 
   const [userData, setUserData] = useState(null);
-  const [loggedName, setLoggedName] = useState(null);
+  const [loggedEmail, setLoggedEmail] = useState(null);
   useEffect(() => {
     // Retrieve loggedInUserId from local storage when the component mounts
-    const loggedInNameFromLocalStorage = localStorage.getItem('loggedName');
-    if (loggedInNameFromLocalStorage) {
-      setLoggedName(loggedInNameFromLocalStorage);
+    const loggedInEmailFromLocalStorage = localStorage.getItem('loggedEmail');
+    if (loggedInEmailFromLocalStorage) {
+      setLoggedEmail(loggedInEmailFromLocalStorage);
       
     }
   }, []);
 
   useEffect(() => {
-    console.log(loggedName)
-    if (loggedName) {
-      // Make the API request using loggedName
-      fetch(`http://localhost:5000/assigntask?faculty=${loggedName}`)
+    console.log(loggedEmail)
+    if (loggedEmail) {
+      // Make the API request using loggedEmail
+      fetch(`http://localhost:5000/assigntask?faculty=${loggedEmail}`)
         .then(response => {
           if (!response.ok) {
             throw new Error('Failed to fetch user details');
@@ -42,7 +42,7 @@ function FTaskTable() {
           console.error('Error fetching user details:', error);
         });
     }
-  }, [loggedName]);
+  }, [loggedEmail]);
           
 
 

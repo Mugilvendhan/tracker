@@ -5,10 +5,7 @@ import { addIssueToServer } from '../../slices/IssueSlice';
 import { useDispatch } from 'react-redux';
 
 function InfraReportForm() {
-
-
-
-
+  
   const [userData, setUserData] = useState(null);
   const [loggedInUserId, setLoggedInUserId] = useState(null);
   useEffect(() => {
@@ -43,31 +40,6 @@ function InfraReportForm() {
   }, [loggedInUserId]);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   const dispatch = useDispatch();
 
   const [formData, setFormData] = useState({
@@ -91,15 +63,6 @@ function InfraReportForm() {
     let error = '';
 
     switch (fieldName) {
-    /*   case 'name':
-        error = value.trim() === '' ? 'First Name is required' : '';
-        break; */
-    /*   case 'email':
-        error = value.trim() === '' ? 'Email Address is required' : !/\S+@\S+\.\S+/.test(value) ? 'Invalid email address' : '';
-        break; */
-    /*   case 'dept':
-        error = value === 'Select' ? 'Department is required' : '';
-        break; */
       case 'location':
         error = value === 'Select' ? 'Issue facing on is required' : '';
         break;

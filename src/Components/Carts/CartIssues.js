@@ -6,7 +6,7 @@ function IssueCart({ cateimg, category, cardtext, btnname, route }) {
   return (
    <Container className='table-responsive'>
      <Card className="mb-3" style={{ minWidth: '15rem', maxWidth: '18rem'}}>
-      <Card.Img variant="top" src={cateimg} />
+      <Card.Img variant="top" src={cateimg} />                                           {/* eact Bootstrap library and is used to display an image within a card component */}
       <Card.Body>
         <Card.Title>{category}</Card.Title>
         <Card.Text>{cardtext}</Card.Text>
