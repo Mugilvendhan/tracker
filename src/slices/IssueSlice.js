@@ -12,7 +12,7 @@ const initialState={
 const BASE_URL="http://localhost:5000/issues/"
 
 export const getIssuesFromServer= createAsyncThunk(
-    "issues/getIssuesFromServer",
+    "issues/getIssuesFromServer",                                                      //string type / callback function
     
     async(_,{rejectWithValue})=>{
         const response=await fetch(BASE_URL)
@@ -50,7 +50,7 @@ export const addIssueToServer = createAsyncThunk(
 
 
 
- //PUT
+ //PATCH
  
  export const updateIssueToServer = createAsyncThunk(
     "issues/updateIssueToServer",
@@ -95,7 +95,7 @@ const issueSlice = createSlice({
 
     name:'issueSlice',
     initialState,
-    reducers:{
+    reducers:{                                                                     //action to be performed
 
 
 
@@ -136,8 +136,8 @@ const issueSlice = createSlice({
 
 
 
-    extraReducers:(builder)=>{
-        builder
+    extraReducers:(builder)=>{                                                           //lifecycle action(pending,fulfilled,rejected)
+        builder                                                                          //parameter
         // GET
         .addCase(getIssuesFromServer.pending,(state)=>{
             state.isLoading=true

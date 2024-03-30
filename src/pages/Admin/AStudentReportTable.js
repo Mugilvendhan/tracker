@@ -24,7 +24,7 @@ function AStudentReportTable() {
         <Container>
       <Row>
       <Col className='lg-12 text-end  mt-4' style={{paddingLeft:'5rem'}}>
-        <StudSearchBar setSearchQuery={setSearchQuery} />
+        <StudSearchBar setSearchQuery={setSearchQuery} />                             {/* setSearchQuery is assigned from search bar  */}
         </Col>
       </Row>
      </Container>
@@ -33,7 +33,7 @@ function AStudentReportTable() {
       <div className="content-box mt-2">
       <Row className='justify-content-center'>
       <Col lg="12">
-      <AStudentTable  searchQuery={searchQuery}/>
+      <AStudentTable  searchQuery={searchQuery}/>                      {/* searchQuery is assigned from table props has been passed */}
         </Col>
     </Row>
     </div>

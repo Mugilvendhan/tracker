@@ -65,7 +65,7 @@ function ReportTable() {
       <tbody>
 
 
-{userData && userData.map((issue, index) => (                                       //.map()-the code iterates over each element in the userData array using the .map() function
+          {userData && userData.map((issue, index) => (                                       //.map()-the code iterates over each element in the userData array using the .map() function
            <tr key={issue.id}>                                                     {/* key -  is used to uniquely identify elements in a list.  */}
            <td>{index + 1}</td>
            <td>{issue.date}</td>
@@ -74,8 +74,8 @@ function ReportTable() {
            <td>{issue.priority}</td>
            <td><b>{issue.status}</b></td>
            
-   </tr>
-          ))}
+          </tr>
+         ))}
 
       </tbody>
     </Table>

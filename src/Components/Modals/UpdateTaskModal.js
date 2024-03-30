@@ -16,7 +16,7 @@ function UpdateTaskModal(props) {
   const dispatch = useDispatch();
                   
   useEffect(() => {
-    if (Object.keys(selectedFieldTask).length !== 0) {
+    if (Object.keys(selectedFieldTask).length !== 0) {                   // it returns an array containing the keys of the selectedFieldTask object.
       setSubName(selectedFieldTask.subname);
       setTask(selectedFieldTask.task);
       setId(selectedFieldTask.id);

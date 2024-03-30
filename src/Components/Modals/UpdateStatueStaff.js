@@ -16,7 +16,7 @@ function UpdateStatueStaff(props) {
 
     useEffect(()=>{
 
-      if(Object.keys(selectedField ).length!==0){
+      if(Object.keys(selectedField ).length!==0){                   //if the number of keys in the selectedField, != 0
        setStatus(selectedField.status);
        setId(selectedField.id);
       }

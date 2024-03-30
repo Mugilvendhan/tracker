@@ -100,7 +100,7 @@ function AcademicReportForm() {
 
   function handleChange(e) {                                               // the event object triggered by the change event 
     const { name, value } = e.target;                                      // uses destructuring assignment to extract the name and value properties from the target property of the event object (e).
-    const error = validateField(name, value);
+    const error = validateField(name, value); 
 
     setFormData(prevData => ({                                             //updates the form data state (formData) using the setFormData function provided by React's useState hook.
       ...prevData,                                                         //It uses the spread operator (...) to create a copy of the previous form data (prevData) and then updates the value of the field corresponding to the name extracted from the event target.

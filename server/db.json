@@ -257,7 +257,7 @@
       "mobile": "6383711534",
       "issueon": "Class room",
       "description": "Faculty members raising concerns about classroom technology. Ensure functionality for teaching",
-      "status": "Pending",
+      "status": "Completed",
       "year": "I"
     },
     {
@@ -324,6 +324,45 @@
       "description": "Faculty members raising concerns about classroom technology. Ensure functionality for teaching",
       "status": "Pending",
       "year": "IV"
+    },
+    {
+      "id": "107d",
+      "date": "2024-03-20",
+      "email": "stud1003@gmail.com",
+      "name": "DEV GURU",
+      "dept": "ECE",
+      "priority": "Medium",
+      "mobile": "9983711534",
+      "issueon": "Class room",
+      "description": "Faculty members raising concerns about classroom technology. Ensure functionality for teaching",
+      "status": "Pending",
+      "year": "II"
+    },
+    {
+      "id": "4b2b",
+      "date": "2024-03-20",
+      "email": "stud1001@gmail.com",
+      "name": "KOWSHIKRAJ K",
+      "dept": "CSE",
+      "priority": "Medium",
+      "mobile": "8883711534",
+      "issueon": "Class room",
+      "description": "Faculty members raising concerns about classroom technology. Ensure functionality for teaching",
+      "status": "Pending",
+      "year": "IV"
+    },
+    {
+      "id": "4631",
+      "date": "2024-03-26",
+      "email": "stud1003@gmail.com",
+      "name": "DEV GURU",
+      "dept": "ECE",
+      "priority": "Medium",
+      "mobile": "9383711534",
+      "issueon": "Class room",
+      "description": "Faculty members raising concerns about classroom technology. Ensure functionality for teaching",
+      "status": "Pending",
+      "year": "II"
     }
   ],
   "issuesfaculty": [
@@ -525,12 +564,13 @@
       "id": "1",
       "role": "admin",
       "name": "ARJUN RAJ",
-      "classdept": "-",
+      "classdept": "",
       "email": "adminkiot@gmail.com",
       "mobile": "6381180091",
       "address": "99/1,Rathan Street santhi nagar Ammapet,Salem",
       "password": "admin@kiot01",
-      "photo": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg"
+      "photo": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg",
+      "year": "NA"
     },
     {
       "id": "87f9",
@@ -1255,6 +1295,16 @@
       "year": "IV",
       "classselect": "Mechanical",
       "duedate": "2024-03-29"
+    },
+    {
+      "id": "66e2",
+      "task": "Develop a basic network communication application for data exchange",
+      "date": "2024-03-27",
+      "subname": "Embedded Systems",
+      "faculty": "faculty003@gmail.com",
+      "year": "IV",
+      "classselect": "ECE",
+      "duedate": "2024-03-28"
     }
   ]
 }

@@ -3,6 +3,8 @@ import React from 'react';
 import { Col, Container } from 'react-bootstrap';
 
 function SearchBar({ setSearchQuery }) {
+
+  
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -19,7 +21,7 @@ function SearchBar({ setSearchQuery }) {
                          
       />
      
-    </Col>
+    </Col>     
        </Container>
     </div>
   );

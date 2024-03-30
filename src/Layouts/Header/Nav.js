@@ -6,7 +6,7 @@ function Navigation() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <>
+    <>                                                                                                   {/* fragment */}
       <Navbar expand="lg" fixed="top" bg="dark" variant="dark">
         <Navbar.Brand href="#" className="text-white px-4">College Issue Tracker</Navbar.Brand>           {/* brand or logo */}
         <Navbar.Toggle aria-controls="navbarScroll" />                                                    {/* hamberger id refers to collapse */}
